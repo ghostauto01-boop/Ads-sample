@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CREATEBYMOH — Streetwear & Fashion Video Ad Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-hero: #FFFFFF;
+    --bg: #0B0A09;
+    --bg-card: #121110;
+    --accent: #00E676;
+    --accent-dark: #00B348;
+    --ink-dark: #0B0A09;
+    --ink-light: #FAF9F6;
+    --muted: #8E8A82;
+    --line: #22201E;
+    --radius: 16px;
+    --radius-lg: 28px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink-light);
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: inherit; text-decoration: none; }
+  .wrap{ max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- HERO BLOCK (White Background block rounding down) ---------- */
+  .hero-block {
+    background: var(--bg-hero);
+    color: var(--ink-dark);
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  nav.hero-nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 28px;
+    margin-top: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--ink-dark);
+    color: var(--ink-dark);
+    border-radius: 100px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    z-index: 10;
+  }
+  .brand{
+    font-weight: 700; font-size: 20px; letter-spacing: 0.12em;
+    display: flex; align-items: center; gap: 8px;
+    text-transform: uppercase;
+    color: var(--ink-dark);
+  }
+  .brand .star-icon{ color: var(--accent-dark); font-size: 14px; animation: rotate-star 8s linear infinite; }
+  @keyframes rotate-star { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  
+  .nav-links{ display: flex; align-items: center; gap: 20px; }
+  .nav-link{ font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(11,10,9,0.7); transition: color 0.15s ease; }
+  .nav-link:hover{ color: var(--ink-dark); }
+  
+  .nav-cta{ font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--ink-dark); color: #fff; padding: 10px 20px; border-radius: 100px; transition: transform 0.2s ease, background 0.2s ease; }
+  .nav-cta:hover{ background: var(--accent-dark); color: var(--ink-dark); transform: translateY(-1px); }
+
+  header.hero { padding-top: 64px; }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; }
+  .hero-left { display: flex; flex-direction: column; gap: 24px; }
+  .hero-left h1 { font-size: clamp(32px, 4.8vw, 54px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin: 0; color: var(--ink-dark); text-transform: uppercase; }
+  .hero-left h1 span { color: var(--accent-dark); }
+  .hero-left .sub { font-size: 16px; color: rgba(11,10,9,0.7); max-width: 44ch; margin: 0; line-height: 1.5; }
+  .hero-left .btn-secondary { font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-dark); border: 1px solid var(--ink-dark); padding: 14px 24px; border-radius: 100px; font-size: 13px; align-self: flex-start; transition: all 0.2s ease; }
+  .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
+
+  .hero-right-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/streetwear/IMG_8533.PNG'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+  .hero-badge-overlay { position: absolute; bottom: -15px; left: -20px; background: var(--bg-dark); color: #fff; padding: 14px 20px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 1px solid var(--accent); }
+  
+  .experience-tag { position: absolute; top: 40px; right: -30px; background: #fff; border: 1px solid var(--line); padding: 12px 20px; border-radius: var(--radius); text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+  .experience-tag .stars { color: #FFB300; font-size: 14px; margin-bottom: 4px; }
+  .experience-tag b { font-size: 16px; display: block; color: var(--ink-dark); }
+  .experience-tag span { font-size: 11px; color: var(--muted); text-transform: uppercase; }
+
+  /* ---------- CAMPAIGNS (9:16 Video Tab Upgrades) ---------- */
+  section.campaigns { padding: 96px 0; }
+  .campaigns-head { text-align: center; margin-bottom: 56px; }
+  .campaigns-head h2 { font-size: 38px; font-weight: 700; text-transform: uppercase; margin: 0; }
+  .campaigns-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  
+  .campaign-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; text-align: center; position: relative; cursor: pointer; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+  .campaign-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+  
+  .campaign-avatar-holder { width: 100%; aspect-ratio: 9/16; border-radius: var(--radius); margin: 0 auto 24px; overflow: hidden; border: 1px solid var(--line); position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.2s ease; }
+  .campaign-card:hover .campaign-avatar-holder { border-color: var(--accent); transform: scale(1.02); }
+  .campaign-avatar-video { width: 100%; height: 100%; object-fit: cover; }
+  
+  .campaign-card h3 { font-size: 19px; font-weight: 700; margin: 0 0 6px; text-transform: uppercase; }
+  .campaign-card .sub-type { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 16px; }
+  .campaign-card p { font-size: 13.5px; color: var(--muted); margin: 0 0 20px; line-height: 1.5; min-height: 60px; }
+  .campaign-card .play-btn { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: #fff; padding: 8px 18px; border-radius: 100px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
+  .campaign-card:hover .play-btn { background: var(--accent); color: var(--ink-dark); border-color: var(--accent); }
+
+  /* ---------- GALLERY / ART PORTFOLIO ---------- */
+  section.gallery { padding: 40px 0 80px; border-top: 1px solid var(--line); }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+  .gallery-item { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; position: relative; border: 1px solid var(--line); cursor: pointer; }
+  .gallery-item-img { width: 100%; height: 100%; background-size: cover; background-position: center; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+  .gallery-item:hover .gallery-item-img { transform: scale(1.08); }
+  .gallery-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(11,10,9,0.9) 0%, rgba(11,10,9,0.3) 60%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-overlay b { font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; color: #fff; font-weight: 400; }
+  .gallery-overlay span { font-size: 11px; color: var(--accent); letter-spacing: 0.05em; margin-top: 4px; text-transform: uppercase; }
+
+  /* ---------- BRIEF REQUEST FORM ---------- */
+  section.brief-section{ padding: 96px 0; border-top: 1px solid var(--line); background: radial-gradient(circle at top right, rgba(0, 230, 118, 0.03), transparent 50%); }
+  .brief-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: flex-start; }
+  .brief-info h2 { font-size: 38px; font-weight: 700; margin: 0 0 20px; line-height: 1.15; text-transform: uppercase; }
+  .brief-info p { color: var(--muted); font-size: 16px; margin-bottom: 32px; line-height: 1.6; }
+  
+  .luxury-perks { display: flex; flex-direction: column; gap: 24px; }
+  .perk { display: flex; align-items: flex-start; gap: 14px; }
+  .perk-bullet { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 10px; box-shadow: 0 0 8px var(--accent); }
+  .perk-text b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-light); margin-bottom: 2px; }
+  .perk-text span { font-size: 14.5px; color: var(--muted); }
+
+  .brief-form-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 40px; }
+  .brief-form { display: flex; flex-direction: column; gap: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .form-group { display: flex; flex-direction: column; gap: 8px; }
+  .form-group label { font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+  .form-group input, .form-group select, .form-group textarea { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; color: var(--ink-light); font-family: inherit; font-size: 14.5px; transition: border-color 0.2s ease; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--accent); outline: none; }
+  
+  .file-drop-area { border: 1px dashed var(--line); border-radius: 8px; padding: 24px; text-align: center; background: var(--bg); cursor: pointer; transition: border-color 0.2s ease; }
+  .file-drop-area:hover { border-color: var(--accent); }
+  .file-drop-area .icon { font-size: 24px; margin-bottom: 8px; display: block; }
+  .file-drop-area span { font-size: 12.5px; color: var(--muted); }
+  .file-drop-area input[type="file"] { display: none; }
+
+  .brief-submit-btn { font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; background: var(--accent); color: var(--ink-dark); border: none; border-radius: 100px; padding: 16px; font-size: 13.5px; cursor: pointer; transition: background 0.2s ease, transform 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .brief-submit-btn:hover { background: #fff; transform: translateY(-1px); }
+
+  .form-success-panel { text-align: center; padding: 20px 0; display: none; }
+  .form-success-panel .icon { font-size: 48px; color: var(--accent); margin-bottom: 16px; display: block; }
+  .form-success-panel h3 { font-size: 24px; margin: 0 0 8px; font-weight: 600; text-transform: uppercase; }
+  .form-success-panel p { color: var(--muted); font-size: 15px; margin: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer-block { background: #00D65A; color: var(--ink-dark); border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg); padding: 80px 0; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+  .footer-logo { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 20px; }
+  .footer-desc { font-size: 15px; color: rgba(11,10,9,0.7); max-width: 32ch; line-height: 1.6; }
+  .footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 20px; color: var(--ink-dark); }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col ul a { font-size: 14px; color: rgba(11,10,9,0.7); transition: color 0.2s; font-weight: 500; }
+  .footer-col ul a:hover { color: var(--ink-dark); }
+  .footer-newsletter { display: flex; flex-direction: column; gap: 16px; }
+  .footer-newsletter h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
+  .newsletter-row { display: flex; gap: 10px; background: rgba(0,0,0,0.06); border-radius: 100px; padding: 6px; border: 1px solid rgba(11,10,9,0.1); }
+  .newsletter-row input { background: none; border: none; outline: none; padding-left: 14px; color: var(--ink-dark); font-family: inherit; font-size: 13.5px; flex-grow: 1; }
+  .newsletter-row button { background: var(--ink-dark); color: #fff; border: none; border-radius: 100px; padding: 10px 18px; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .newsletter-row button:hover { background: #1C1A18; }
+  .footer-bottom { border-top: 1px solid rgba(11,10,9,0.1); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: rgba(11,10,9,0.6); font-weight: 500; }
+
+  /* ---------- WHATSAPP FLOATING BUTTON (Persuasive call track) ---------- */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
+    animation: wa-pulse 2s infinite alternate;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1) translateY(-2px);
+    background-color: #20BA5A;
+  }
+  .whatsapp-icon {
+    width: 30px; height: 32px;
+    fill: currentColor;
+  }
+  @keyframes wa-pulse {
+    0% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+    100% { box-shadow: 0 12px 36px rgba(37, 211, 102, 0.7); }
+  }
+
+  /* ---------- INTERACTIVE UGC PLAYER MODAL ---------- */
+  .ugc-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; }
+  .ugc-modal.active { display: flex; opacity: 1; }
+  .ugc-modal-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(11, 10, 9, 0.94); backdrop-filter: blur(10px); }
+  .ugc-modal-container { position: relative; z-index: 1001; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 375px; padding: 10px; box-sizing: border-box; transform: scale(0.9) translateY(20px); transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  .ugc-modal.active .ugc-modal-container { transform: scale(1) translateY(0); }
+  .ugc-close-btn { position: absolute; top: -50px; right: 10px; background: none; border: none; color: #fff; font-size: 32px; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease; display: flex; align-items: center; justify-width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.06); }
+  .ugc-close-btn:hover { transform: rotate(90deg) scale(1.1); background: rgba(255,255,255,0.15); }
+  .ugc-phone { width: 100%; aspect-ratio: 9/19.5; max-height: 82vh; background: #000; border-radius: 40px; box-shadow: 0 25px 60px -15px rgba(0,0,0,0.9), 0 0 0 10px #1d1b18; border: 4px solid #3c3935; overflow: hidden; position: relative; display: flex; flex-direction: column; }
+  .phone-island { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 110px; height: 26px; background: #000; border-radius: 20px; z-index: 10; box-shadow: inset 0 1px 1px rgba(255,255,255,0.1); }
+  .ugc-viewport { width: 100%; height: 100%; position: relative; overflow: hidden; background: #000; display: flex; flex-direction: column; justify-content: space-between; user-select: none; }
+  .ugc-video-element { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; background: #000; }
+  .ugc-play-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0); cursor: pointer; opacity: 0; transition: opacity 0.25s ease, background-color 0.25s ease; }
+  .ugc-phone.paused .ugc-play-overlay { opacity: 1; background: rgba(0,0,0,0.35); }
+  .ugc-play-icon { width: 64px; height: 64px; background: rgba(255, 255, 255, 0.95); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.4); transform: scale(0.8); transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .ugc-phone.paused .ugc-play-icon { transform: scale(1); }
+  .ugc-play-icon::after { content: ''; width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 20px solid var(--accent); margin-left: 5px; }
+  .ugc-top-bar { position: relative; z-index: 6; display: flex; justify-content: space-between; align-items: center; padding: 18px 24px 10px; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 13px; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+  .ugc-sim-icons { display: flex; align-items: center; gap: 4px; }
+  .ugc-sim-icons svg { width: 14px; height: 14px; color: #fff; }
+  .ugc-progress-container { position: absolute; top: 50px; left: 16px; right: 16px; height: 3px; background: rgba(255,255,255,0.25); border-radius: 10px; z-index: 6; }
+  .ugc-progress-bar { width: 0%; height: 100%; background: var(--accent); box-shadow: 0 0 8px var(--accent); border-radius: 10px; transition: width 0.1s linear; }
+  .ugc-sidebar { position: absolute; right: 12px; bottom: 120px; z-index: 6; display: flex; flex-direction: column; gap: 18px; align-items: center; }
+  .ugc-action-btn { display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.15s ease; }
+  .ugc-action-btn:hover { transform: scale(1.1); }
+  .ugc-action-btn .heart-icon, .ugc-action-btn .comment-icon, .ugc-action-btn .share-icon { width: 42px; height: 42px; background: rgba(20, 18, 17, 0.65); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; backdrop-filter: blur(4px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: background-color 0.2s ease, border-color 0.2s ease; }
+  .ugc-action-btn .heart-icon.liked { animation: heart-pop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; background: var(--accent); border-color: var(--accent); }
+  .ugc-action-btn .count { font-size: 11px; color: #fff; font-weight: 500; margin-top: 4px; text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
+  .ugc-disc-container { margin-top: 4px; }
+  .ugc-disc { font-size: 26px; animation: rotate-disc 4s linear infinite; animation-play-state: paused; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
+  .ugc-phone.playing .ugc-disc { animation-play-state: running; }
+  .ugc-caption-panel { position: absolute; bottom: 0; left: 0; right: 0; z-index: 6; background: linear-gradient(to top, rgba(11,10,9,0.98) 0%, rgba(11,10,9,0.6) 75%, transparent 100%); padding: 24px 20px 24px 20px; color: #fff; }
+  .ugc-brand-handle { font-weight: 700; font-size: 14.5px; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: var(--ink-dark); font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ugc-caption-text { font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; line-height: 1.4; color: #E6E4E0; margin: 0 0 10px; min-height: 38px; text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
+  .ugc-music-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); overflow: hidden; }
+  .music-text-container { overflow: hidden; white-space: nowrap; width: 150px; }
+  .music-text { display: inline-block; padding-left: 100%; animation: marquee 8s linear infinite; animation-play-state: paused; }
+  .ugc-phone.playing .music-text { animation-play-state: running; }
+
+  /* ---------- MOBILE STYLING FIXES (Strict alignment / zero overlap) ---------- */
+  @media (max-width: 768px){
+    /* Navbar compact visible fixes */
+    nav.hero-nav {
+      padding: 8px 16px;
+      margin-top: 12px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .brand { font-size: 15px; letter-spacing: 0.08em; }
+    .nav-links { gap: 10px; }
+    .nav-link { font-size: 10.5px; font-weight: 700; }
+    .nav-cta { display: none; }
+
+    /* Hero section layouts */
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .hero-left { align-items: center; }
+    .hero-left h1 { text-align: center; font-size: 34px; line-height: 1.1; }
+    .hero-left .sub { max-width: 100%; font-size: 14.5px; }
+    .hero-left .btn-secondary { align-self: center; }
+    .hero-right-visual { margin-top: 24px; }
+    .hero-main-img { width: 280px; height: 350px; }
+    .experience-tag { right: -10px; top: 10px; padding: 8px 14px; }
+    .experience-tag b { font-size: 13px; }
+    .experience-tag span { font-size: 10px; }
+    .hero-badge-overlay { bottom: -10px; left: -10px; padding: 10px 16px; font-size: 9.5px; }
+    .float-pill { font-size: 10px; padding: 6px 12px; }
+
+    /* Form responsiveness card fixes */
+    .form-row { grid-template-columns: 1fr; gap: 12px; }
+    .brief-form-card { padding: 24px 20px; }
+    .brief-submit-btn { width: 100%; padding: 14px; }
+
+    /* Campaigns list stacks */
+    .campaigns-grid, .gallery-grid, .brief-grid { grid-template-columns: 1fr; gap: 20px; }
+    .campaign-card { padding: 20px; }
+    .campaign-avatar-holder { width: 100%; max-width: 260px; margin: 0 auto 20px; }
+    .campaign-card .play-btn { width: 100%; justify-content: center; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+    .footer-logo, .footer-desc { align-self: center; margin: 0 auto; }
+    .newsletter-row { max-width: 320px; margin: 0 auto; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .whatsapp-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+    .whatsapp-icon { width: 26px; height: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ---------- HERO BLOCK ---------- -->
+<div class="hero-block">
+  <div class="wrap">
+    <nav class="hero-nav">
+      <div class="brand"><span class="star-icon">✦</span>CREATEBYMOH</div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="perfumes.html" class="nav-link">Perfumes</a>
+        <a href="jewelry.html" class="nav-link">Jewelry</a>
+      </div>
+      <a class="nav-cta" href="#request-sample">Let's Talk</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Cinematic Ads for<br><span>Streetwear</span> Brands</h1>
+          <p class="sub">High-converting social garment campaigns, oversized lookbook cuts, and seamless outfit transit clips that showcase fabric luxury and maximize Reels & TikTok conversions.</p>
+          <a class="btn-secondary" href="#request-sample">Get Free Garment Mockup</a>
+        </div>
+
+        <div class="hero-right-visual">
+          <div class="hero-main-img">
+            <div class="bottle-floating-action">
+              <span class="float-pill green">Apparel</span>
+              <span class="float-pill black">Ready to wear</span>
+            </div>
+          </div>
+          <div class="experience-tag">
+            <div class="stars">★★★★★</div>
+            <b>10 Years</b>
+            <span>Experience</span>
+          </div>
+          <div class="hero-badge-overlay">STREETWEAR DIVISION</div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+<!-- ---------- PORTFOLIO CAMPAIGNS (9:16) ---------- -->
+<section id="campaigns" class="campaigns wrap">
+  <div class="campaigns-head">
+    <h2>Streetwear & Fashion Portfolio</h2>
+  </div>
+
+  <div class="campaigns-grid">
+    <div class="campaign-card" data-sample="shirt-swap">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/shirt-swap.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Shirt Swap Transition</h3>
+      <span class="sub-type">Lifestyle UGC · 15s</span>
+      <p>A fast-paced streetwear swap cut sequence built for viral social reach and high catalog discovery.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <div class="campaign-card" data-sample="hoodie-lookbook">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Oversized Hoodie</h3>
+      <span class="sub-type">Heavyweight Fleece · 12s</span>
+      <p>Tactile closeups displaying robust fabric drapes, premium relaxed fits, and clean drop shoulders.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <div class="campaign-card" data-sample="tracksuit">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/tracksuit.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Tracksuit Campaign</h3>
+      <span class="sub-type">Active Lifestyle · 15s</span>
+      <p>Full tracksuit lookbook movement cuts displaying active street cuts.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <div class="campaign-card" data-sample="retro-tee">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/retro-tee.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Retro Tee Lookbook</h3>
+      <span class="sub-type">Vintage Wash · 10s</span>
+      <p>Aesthetic lookbook frames highlighting raw collar washes, luxury chest graphic embroidery, and boxy fit.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <div class="campaign-card" data-sample="cargo-sweatpants">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/cargo-sweatpants.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Cargo Sweatpants Drop</h3>
+      <span class="sub-type">Heavy Utility · 13s</span>
+      <p>Detailed closeups of utility pocket stitching, robust waist ties, and premium fleece textures.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <div class="campaign-card" data-sample="heavyweight-fleece">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/heavyweight-fleece.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Heavyweight Fleece</h3>
+      <span class="sub-type">Product review UGC · 14s</span>
+      <p>Conversational, tactile unboxing feel reviewing material thickness, cozy inner fleece linings, and fit sizing.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- GALLERY / ART PORTFOLIO ---------- -->
+<section id="gallery" class="gallery wrap">
+  <div class="campaigns-head">
+    <h2>Art Direction Universe</h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_7931.PNG');"></div><div class="gallery-overlay"><b>Streetwear Look</b><span>Urban Cargo</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_7936.PNG');"></div><div class="gallery-overlay"><b>Streetwear Drop</b><span>Fleece Utility</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_7957.PNG');"></div><div class="gallery-overlay"><b>Boxy Hoodie</b><span>Vintage Wash</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_7958.PNG');"></div><div class="gallery-overlay"><b>Minimal Sweatpant</b><span>Relaxed Fit</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_8052.JPG');"></div><div class="gallery-overlay"><b>Heavyweight Crew</b><span>Cotton Knits</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_8063.JPG');"></div><div class="gallery-overlay"><b>Graphic Tee</b><span>Screenprint Finish</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/streetwear/IMG_8531.PNG');"></div><div class="gallery-overlay"><b>Fleece Tracksuit</b><span>Essential Grey</span></div></div>
+  </div>
+</section>
+
+<!-- ---------- BRIEF REQUEST FORM ---------- -->
+<section id="request-sample" class="brief-section">
+  <div class="wrap brief-grid">
+    <div class="brief-info">
+      <h2>Get your custom streetwear mockup, free</h2>
+      <p>Provide details on your garment's fabric weight and target style. We will generate a free custom 10-15s vertical lookbook or transition mock in 48 hours.</p>
+      <div class="luxury-perks">
+        <div class="perk"><div class="perk-bullet"></div><div class="perk-text"><b>Fabric Matchmaking</b><span>Visual layouts meticulously configured to highlight heavy cotton drapes, texture weaves, or print details.</span></div></div>
+        <div class="perk"><div class="perk-bullet"></div><div class="perk-text"><b>Direct email briefing</b><span>Brief options are instantly structured and pre-filled in your default email draft to webwizardmarketingagency@gmail.com on submit.</span></div></div>
+      </div>
+    </div>
+
+    <div class="brief-form-card">
+      <form id="perfume-brief-form" class="brief-form" onsubmit="handleBriefSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label for="brand-name">Garment Brand</label><input type="text" id="brand-name" required placeholder="e.g. CREATEBYMOH"></div>
+          <div class="form-group"><label for="contact-email">Email Address</label><input type="email" id="contact-email" required placeholder="e.g. creative@brand.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="perfume-name">Garment / Line Name</label><input type="text" id="perfume-name" required placeholder="e.g. Heavyweight Hoodie"></div>
+          <div class="form-group">
+            <label for="ad-style">Targeted Ad Style</label>
+            <select id="ad-style" required>
+              <option value="UGC Ad">UGC Ad</option>
+              <option value="Product-focused Base">Product-focused Ad</option>
+              <option value="Product Review">Product Review Ad</option>
+              <option value="Unboxing Style">Unboxing Style</option>
+              <option value="Lifestyle & Aesthetic">Lifestyle & Aesthetic Ad</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="format-type">Creative Format</label>
+            <select id="format-type" required>
+              <option value="Video Creative (.mp4)">Video Creative (.mp4)</option>
+              <option value="Image Ads Creative (.jpg/.png)">Image Ads Creative (.jpg/.png)</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="bottle-type">Fabric Material & GSM</label><input type="text" id="bottle-type" required placeholder="e.g. 100% Cotton 450GSM"></div>
+        </div>
+        <div class="form-group"><label for="scent-notes">Key Design Details & targeted lookbook feel</label><textarea id="scent-notes" rows="3" placeholder="Tell us about the drop shoulders, utility pockets, print graphics, or wash textures..."></textarea></div>
+        <div class="form-group">
+          <label>Photos / Reference Briefing</label>
+          <div class="file-drop-area" onclick="document.getElementById('file-input').click()">
+            <span class="icon">📸</span><span>Photos are added as email attachments upon submit</span>
+            <input type="file" id="file-input" multiple accept="image/*">
+          </div>
+        </div>
+        <button type="submit" class="brief-submit-btn"><span>Submit Streetwear Brief</span></button>
+      </form>
+      <div id="form-success" class="form-success-panel"><span class="icon">👑</span><h3>Brief Prepared</h3><p>Success! Your email client has been launched to forward the details directly to <strong>webwizardmarketingagency@gmail.com</strong>. Please attach your product photos and hit Send!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- EMERALD GREEN FOOTER ---------- -->
+<footer class="footer-block">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">CREATEBYMOH</span>
+        <p class="footer-desc">Premium cinematic motion direction and campaign assets for luxury fragrance, streetwear, and accessory houses.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Brand Niches</h5>
+        <ul>
+          <li><a href="perfumes.html">Fragrance Studio</a></li>
+          <li><a href="streetwear.html">Streetwear Studio</a></li>
+          <li><a href="jewelry.html">Jewelry Studio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Newsletter</h5>
+        <div class="footer-newsletter">
+          <p style="font-size: 13.5px; color: rgba(11,10,9,0.7); margin: 0;">Subscribe to receive creative directing trends and early access offers.</p>
+          <div class="newsletter-row"><input type="email" placeholder="Your email"><button>Subscribe</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CREATEBYMOH. All rights reserved.</span><span>webwizardmarketingagency@gmail.com</span></div>
+  </div>
+</footer>
+
+<!-- ---------- WHATSAPP FLOATING BUTTON ---------- -->
+<a href="https://wa.me/2348164802777?text=Hi%20CREATEBYMOH%2C%20I%27m%20interested%20in%20a%20free%20custom%20ad%20campaign%20for%20my%20brand!%20" class="whatsapp-float" target="_blank" aria-label="Message CREATEBYMOH on WhatsApp" title="Chat on WhatsApp">
+  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.753-1.454L0 24zm6.59-4.846c1.6.95 3.197 1.45 4.817 1.45 5.426 0 9.843-4.382 9.846-9.768.001-2.607-1.011-5.059-2.85-6.902C16.623 2.091 14.167 1.07 11.56 1.07 6.138 1.07 1.719 5.453 1.717 10.841c0 1.696.444 3.349 1.284 4.817L1.93 21.17l5.836-1.516z M16.947 13.916c-.29-.146-1.72-.85-1.986-.948-.266-.098-.46-.146-.653.146-.193.292-.748.948-.917 1.141-.17.194-.339.219-.63.073-.29-.147-1.226-.453-2.337-1.444-.864-.771-1.447-1.724-1.617-2.016-.17-.29-.018-.448.128-.593.13-.13.29-.34.435-.51.145-.17.193-.29.29-.485.097-.194.048-.364-.025-.51-.072-.147-.653-1.577-.894-2.16-.235-.568-.475-.49-.653-.495-.17-.005-.363-.006-.556-.006-.193 0-.507.073-.772.364-.266.292-1.014.992-1.014 2.422 0 1.43 1.039 2.81 1.184 3.003.145.194 2.044 1.583 4.95 2.809.691.291 1.23.465 1.65.602.695.22 1.328.19 1.827.114.557-.084 1.72-.703 1.962-1.383.242-.68.242-1.262.17-1.382-.073-.12-.266-.194-.557-.341z" />
+  </svg>
+</a>
+
+<!-- ---------- INTERACTIVE UGC PLAYER MODAL ---------- -->
+<div id="ugc-modal" class="ugc-modal">
+  <div class="ugc-modal-overlay"></div>
+  <div class="ugc-modal-container">
+    <button class="ugc-close-btn" aria-label="Close Player">&times;</button>
+    <div class="ugc-phone">
+      <div class="phone-island"></div>
+      <div class="ugc-viewport">
+        <video id="ugc-video-element" class="ugc-video-element" playsinline loop></video>
+        <div class="ugc-play-overlay"><div class="ugc-play-icon"></div></div>
+        <div class="ugc-top-bar"><div class="ugc-sim-time">9:41</div>
+          <div class="ugc-sim-icons">
+            <svg class="battery" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" style="width:16px; height:16px;"><rect x="2" y="7" width="14" height="10" rx="2"/><rect x="17" y="10" width="3" height="4" rx="1" fill="currentColor"/><rect x="4" y="9" width="8" height="6" fill="currentColor"/></svg>
+          </div>
+        </div>
+        <div class="ugc-progress-container"><div class="ugc-progress-bar"></div></div>
+        <div class="ugc-sidebar">
+          <div class="ugc-action-btn" id="ugc-like-btn"><div class="heart-icon">❤️</div><span class="count" id="ugc-likes-count">14.2K</span></div>
+          <div class="ugc-action-btn"><div class="comment-icon">💬</div><span class="count">248</span></div>
+          <div class="ugc-action-btn"><div class="share-icon">🔗</div><span class="count">832</span></div>
+          <div class="ugc-disc-container"><div class="ugc-disc">💿</div></div>
+        </div>
+        <div class="ugc-caption-panel">
+          <div class="ugc-brand-handle">@createbymoh</div>
+          <p class="ugc-caption-text">Designing premium sensory worlds in motion...</p>
+          <div class="ugc-music-row"><span class="music-icon">🎵</span><div class="music-text-container"><div class="music-text">Original Sound - CREATEBYMOH</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function handleBriefSubmit(e) {
+  e.preventDefault();
+  const brand = document.getElementById('brand-name').value;
+  const email = document.getElementById('contact-email').value;
+  const name = document.getElementById('perfume-name').value;
+  const style = document.getElementById('ad-style').value;
+  const format = document.getElementById('format-type').value;
+  const fabric = document.getElementById('bottle-type').value;
+  const notes = document.getElementById('scent-notes').value;
+  
+  const subject = encodeURIComponent(`New Streetwear Brief from ${brand}`);
+  const body = encodeURIComponent(
+    `Hi CREATEBYMOH,\n\n` +
+    `I'm interested in a free custom streetwear ad for my brand.\n\n` +
+    `--- Streetwear Campaign Brief ---\n` +
+    `Brand Name: ${brand}\n` +
+    `Contact Email: ${email}\n` +
+    `Garment Name: ${name}\n` +
+    `Targeted Ad Style: ${style}\n` +
+    `Creative Format: ${format}\n` +
+    `Fabric Finish: ${fabric}\n` +
+    `Design Details: ${notes}\n\n` +
+    `[IMPORTANT] Please attach 2-3 product photos to this email before hitting send!\n\n` +
+    `Best regards,\n` +
+    `${brand}`
+  );
+  
+  window.location.href = `mailto:webwizardmarketingagency@gmail.com?subject=${subject}&body=${body}`;
+  document.getElementById('perfume-brief-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('ugc-modal');
+  const overlay = modal.querySelector('.ugc-modal-overlay');
+  const closeBtn = modal.querySelector('.ugc-close-btn');
+  const phone = modal.querySelector('.ugc-phone');
+  const viewport = modal.querySelector('.ugc-viewport');
+  const videoElement = document.getElementById('ugc-video-element');
+  const progressBar = modal.querySelector('.ugc-progress-bar');
+  const captionText = modal.querySelector('.ugc-caption-text');
+  const brandHandle = modal.querySelector('.ugc-brand-handle');
+  const likeBtn = document.getElementById('ugc-like-btn');
+  const likesCount = document.getElementById('ugc-likes-count');
+  
+  const samplesData = {
+    'shirt-swap': { handle: '@streetwear_swap', caption: "Garment transition cut sequence designed for streetwear lookbooks.", video: 'videos/streetwear/shirt-swap.mp4', likes: '22.4K' },
+    'hoodie-lookbook': { handle: '@hoodie_labs', caption: "Tactile closeups highlighting premium relaxed heavyweight fleece fits.", video: 'videos/streetwear/hoodie-lookbook.mp4', likes: '15.6K' },
+    'tracksuit': { handle: '@creativ_sweats', caption: "Full tracksuit lookbook movement cuts displaying active street cuts.", video: 'videos/streetwear/tracksuit.mp4', likes: '18.9K' },
+    'retro-tee': { handle: '@vintage_teez', caption: "Vintage washed drop shoulders tee with custom raw collar styling.", video: 'videos/streetwear/retro-tee.mp4', likes: '14.2K' },
+    'cargo-sweatpants': { handle: '@heavy_fleece', caption: "Detailed cargo fleece pockets and contrast heavy tie closeups.", video: 'videos/streetwear/cargo-sweatpants.mp4', likes: '12.8K' },
+    'heavyweight-fleece': { handle: '@street_drops', caption: "UGC unboxing review detailing inner fleece linings and fabric thickness.", video: 'videos/streetwear/heavyweight-fleece.mp4', likes: '9.4K' }
+  };
+  
+  let currentSample = null;
+  
+  function openPlayer(sampleKey) {
+    const data = samplesData[sampleKey];
+    if (!data) return;
+    currentSample = sampleKey;
+    brandHandle.textContent = data.handle;
+    likesCount.textContent = data.likes;
+    likeBtn.querySelector('.heart-icon').classList.remove('liked');
+    modal.classList.add('active');
+    phone.classList.remove('paused');
+    phone.classList.add('playing');
+    videoElement.src = data.video;
+    videoElement.load();
+    videoElement.muted = true;
+    videoElement.play().catch(e => console.log('Autoplay blocked:', e));
+  }
+  
+  function closePlayer() {
+    modal.classList.remove('active');
+    phone.classList.remove('playing', 'paused');
+    videoElement.pause();
+    videoElement.src = '';
+  }
+  
+  function togglePlay() {
+    if (videoElement.paused) {
+      videoElement.play().catch(e => console.log(e));
+      phone.classList.remove('paused');
+      phone.classList.add('playing');
+    } else {
+      videoElement.pause();
+      phone.classList.remove('playing');
+      phone.classList.add('paused');
+    }
+  }
+  
+  videoElement.ontimeupdate = () => {
+    if (!currentSample) return;
+    const percentage = (videoElement.currentTime / (videoElement.duration || 13)) * 100;
+    progressBar.style.width = `${Math.min(percentage, 100)}%`;
+    captionText.textContent = samplesData[currentSample].caption;
+  };
+  
+  document.querySelectorAll('[data-sample]').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openPlayer(trigger.getAttribute('data-sample'));
+    });
+  });
+  
+  viewport.addEventListener('click', (e) => {
+    if (e.target.closest('.ugc-sidebar')) return;
+    togglePlay();
+  });
+  
+  likeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const heart = likeBtn.querySelector('.heart-icon');
+    if (!heart.classList.contains('liked')) {
+      heart.classList.add('liked');
+      likesCount.textContent = (parseFloat(likesCount.textContent) + 0.1).toFixed(1) + 'K';
+    }
+  });
+  
+  closeBtn.addEventListener('click', closePlayer);
+  overlay.addEventListener('click', closePlayer);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePlayer();
+    if (e.key === ' ' && modal.classList.contains('active')) { e.preventDefault(); togglePlay(); }
+  });
+});
+</script>
+
+</body>
+</html>
