@@ -11,8 +11,8 @@
     --bg-hero: #FFFFFF;
     --bg: #0B0A09;
     --bg-card: #121110;
-    --accent: #00E676;
-    --accent-dark: #00B348;
+    --accent: #2643FF; /* Premium Electric Cobalt Blue */
+    --accent-dark: #1A3BF5;
     --ink-dark: #0B0A09;
     --ink-light: #FAF9F6;
     --muted: #8E8A82;
@@ -72,14 +72,14 @@
   .nav-link{ font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(11,10,9,0.7); transition: color 0.15s ease; }
   .nav-link:hover{ color: var(--ink-dark); }
   
-  .nav-cta{ font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--ink-dark); color: #fff; padding: 10px 20px; border-radius: 100px; transition: transform 0.2s ease, background 0.2s ease; }
-  .nav-cta:hover{ background: var(--accent-dark); color: var(--ink-dark); transform: translateY(-1px); }
+  .nav-cta{ font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 100px; transition: transform 0.2s ease, background 0.2s ease; }
+  .nav-cta:hover{ background: var(--ink-dark); color: #fff; transform: translateY(-1px); }
 
   header.hero { padding-top: 64px; }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; }
   .hero-left { display: flex; flex-direction: column; gap: 24px; }
   .hero-left h1 { font-size: clamp(32px, 4.8vw, 54px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin: 0; color: var(--ink-dark); text-transform: uppercase; }
-  .hero-left h1 span { color: var(--accent-dark); }
+  .hero-left h1 span { color: var(--accent); }
   .hero-left .sub { font-size: 16px; color: rgba(11,10,9,0.7); max-width: 44ch; margin: 0; line-height: 1.5; }
   .hero-left .btn-secondary { font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-dark); border: 1px solid var(--ink-dark); padding: 14px 24px; border-radius: 100px; font-size: 13px; align-self: flex-start; transition: all 0.2s ease; }
   .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
@@ -109,8 +109,8 @@
   .campaign-card h3 { font-size: 19px; font-weight: 700; margin: 0 0 6px; text-transform: uppercase; }
   .campaign-card .sub-type { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 16px; }
   .campaign-card p { font-size: 13.5px; color: var(--muted); margin: 0 0 20px; line-height: 1.5; min-height: 60px; }
-  .campaign-card .play-btn { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; background: rgba(255,255,255,0.04); border: 1px solid var(--line); color: #fff; padding: 8px 18px; border-radius: 100px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
-  .campaign-card:hover .play-btn { background: var(--accent); color: var(--ink-dark); border-color: var(--accent); }
+  .campaign-card .play-btn { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; background: var(--accent); border: 1px solid var(--accent); color: #fff; padding: 8px 18px; border-radius: 100px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
+  .campaign-card:hover .play-btn { background: #fff; color: var(--ink-dark); border-color: #fff; }
 
   /* ---------- GALLERY / ART PORTFOLIO ---------- */
   section.gallery { padding: 40px 0 80px; border-top: 1px solid var(--line); }
@@ -124,7 +124,7 @@
   .gallery-overlay span { font-size: 11px; color: var(--accent); letter-spacing: 0.05em; margin-top: 4px; text-transform: uppercase; }
 
   /* ---------- BRIEF REQUEST FORM ---------- */
-  section.brief-section{ padding: 96px 0; border-top: 1px solid var(--line); background: radial-gradient(circle at top right, rgba(0, 230, 118, 0.03), transparent 50%); }
+  section.brief-section{ padding: 96px 0; border-top: 1px solid var(--line); background: radial-gradient(circle at top right, rgba(38, 67, 255, 0.03), transparent 50%); }
   .brief-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: flex-start; }
   .brief-info h2 { font-size: 38px; font-weight: 700; margin: 0 0 20px; line-height: 1.15; text-transform: uppercase; }
   .brief-info p { color: var(--muted); font-size: 16px; margin-bottom: 32px; line-height: 1.6; }
@@ -149,8 +149,8 @@
   .file-drop-area span { font-size: 12.5px; color: var(--muted); }
   .file-drop-area input[type="file"] { display: none; }
 
-  .brief-submit-btn { font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; background: var(--accent); color: var(--ink-dark); border: none; border-radius: 100px; padding: 16px; font-size: 13.5px; cursor: pointer; transition: background 0.2s ease, transform 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 8px; }
-  .brief-submit-btn:hover { background: #fff; transform: translateY(-1px); }
+  .brief-submit-btn { font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; background: var(--accent); color: #fff; border: none; border-radius: 100px; padding: 16px; font-size: 13.5px; cursor: pointer; transition: background 0.2s ease, transform 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .brief-submit-btn:hover { background: #fff; color: var(--ink-dark); transform: translateY(-1px); }
 
   .form-success-panel { text-align: center; padding: 20px 0; display: none; }
   .form-success-panel .icon { font-size: 48px; color: var(--accent); margin-bottom: 16px; display: block; }
@@ -158,21 +158,21 @@
   .form-success-panel p { color: var(--muted); font-size: 15px; margin: 0; }
 
   /* ---------- FOOTER ---------- */
-  .footer-block { background: #00D65A; color: var(--ink-dark); border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg); padding: 80px 0; }
+  .footer-block { background: var(--accent); color: #fff; border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg); padding: 80px 0; }
   .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
-  .footer-logo { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 20px; }
-  .footer-desc { font-size: 15px; color: rgba(11,10,9,0.7); max-width: 32ch; line-height: 1.6; }
-  .footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 20px; color: var(--ink-dark); }
+  .footer-logo { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 20px; color: #fff; }
+  .footer-desc { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 32ch; line-height: 1.6; }
+  .footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 20px; color: #fff; }
   .footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
-  .footer-col ul a { font-size: 14px; color: rgba(11,10,9,0.7); transition: color 0.2s; font-weight: 500; }
-  .footer-col ul a:hover { color: var(--ink-dark); }
+  .footer-col ul a { font-size: 14px; color: rgba(255,255,255,0.8); transition: color 0.2s; font-weight: 500; }
+  .footer-col ul a:hover { color: #fff; }
   .footer-newsletter { display: flex; flex-direction: column; gap: 16px; }
-  .footer-newsletter h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
-  .newsletter-row { display: flex; gap: 10px; background: rgba(0,0,0,0.06); border-radius: 100px; padding: 6px; border: 1px solid rgba(11,10,9,0.1); }
-  .newsletter-row input { background: none; border: none; outline: none; padding-left: 14px; color: var(--ink-dark); font-family: inherit; font-size: 13.5px; flex-grow: 1; }
-  .newsletter-row button { background: var(--ink-dark); color: #fff; border: none; border-radius: 100px; padding: 10px 18px; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
-  .newsletter-row button:hover { background: #1C1A18; }
-  .footer-bottom { border-top: 1px solid rgba(11,10,9,0.1); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: rgba(11,10,9,0.6); font-weight: 500; }
+  .footer-newsletter h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; color: #fff; }
+  .newsletter-row { display: flex; gap: 10px; background: rgba(255,255,255,0.15); border-radius: 100px; padding: 6px; border: 1px solid rgba(255,255,255,0.25); }
+  .newsletter-row input { background: none; border: none; outline: none; padding-left: 14px; color: #fff; font-family: inherit; font-size: 13.5px; flex-grow: 1; }
+  .newsletter-row button { background: #fff; color: var(--accent); border: none; border-radius: 100px; padding: 10px 18px; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .newsletter-row button:hover { background: #FAF9F6; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: rgba(255,255,255,0.7); font-weight: 500; }
 
   /* ---------- WHATSAPP FLOATING BUTTON (Persuasive call track) ---------- */
   .whatsapp-float {
@@ -188,18 +188,9 @@
     transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
     animation: wa-pulse 2s infinite alternate;
   }
-  .whatsapp-float:hover {
-    transform: scale(1.1) translateY(-2px);
-    background-color: #20BA5A;
-  }
-  .whatsapp-icon {
-    width: 30px; height: 32px;
-    fill: currentColor;
-  }
-  @keyframes wa-pulse {
-    0% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
-    100% { box-shadow: 0 12px 36px rgba(37, 211, 102, 0.7); }
-  }
+  .whatsapp-float:hover { transform: scale(1.1) translateY(-2px); background-color: #20BA5A; }
+  .whatsapp-icon { width: 30px; height: 32px; fill: currentColor; }
+  @keyframes wa-pulse { 0% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); } 100% { box-shadow: 0 12px 36px rgba(37, 211, 102, 0.7); } }
 
   /* ---------- INTERACTIVE UGC PLAYER MODAL ---------- */
   .ugc-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; }
@@ -234,7 +225,7 @@
   .ugc-phone.playing .ugc-disc { animation-play-state: running; }
   .ugc-caption-panel { position: absolute; bottom: 0; left: 0; right: 0; z-index: 6; background: linear-gradient(to top, rgba(11,10,9,0.98) 0%, rgba(11,10,9,0.6) 75%, transparent 100%); padding: 24px 20px 24px 20px; color: #fff; }
   .ugc-brand-handle { font-weight: 700; font-size: 14.5px; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: var(--ink-dark); font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: #fff; font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
   .ugc-caption-text { font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; line-height: 1.4; color: #E6E4E0; margin: 0 0 10px; min-height: 38px; text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
   .ugc-music-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); overflow: hidden; }
   .music-text-container { overflow: hidden; white-space: nowrap; width: 150px; }
@@ -321,13 +312,35 @@
           </div>
           <div class="experience-tag">
             <div class="stars">★★★★★</div>
-            <b>10 Years</b>
+            <b>4 Years</b>
             <span>Experience</span>
           </div>
           <div class="hero-badge-overlay">JEWELRY DIVISION</div>
         </div>
       </div>
     </header>
+  </div>
+</div>
+
+<!-- ---------- STATS BAR (Updated Copy to Look Highly Realistic) ---------- -->
+<div class="stats-bar">
+  <div class="wrap stats-grid">
+    <div class="stat-item">
+      <h2>50+</h2>
+      <span>Brands Scaled</span>
+    </div>
+    <div class="stat-item">
+      <h2>4+</h2>
+      <span>Years Exp.</span>
+    </div>
+    <div class="stat-item">
+      <h2>20M+</h2>
+      <span>Campaign Views</span>
+    </div>
+    <div class="stat-item">
+      <h2>$15M+</h2>
+      <span>Tracked Revenue</span>
+    </div>
   </div>
 </div>
 
@@ -435,7 +448,17 @@
           <div class="form-group"><label for="contact-email">Email Address</label><input type="email" id="contact-email" required placeholder="e.g. creative@brand.com"></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label for="perfume-name">Accessory / Line Name</label><input type="text" id="perfume-name" required placeholder="e.g. Gilded Link Chain"></div>
+          <div class="form-group">
+            <label for="niche-type">Industry Niche</label>
+            <select id="niche-type" required onchange="toggleNicheInput(this)">
+              <option value="Perfume & Fragrance">Perfume & Fragrance</option>
+              <option value="Streetwear Clothing">Streetwear Clothing</option>
+              <option value="Fine Jewelry">Fine Jewelry</option>
+              <option value="Cosmetics & Skincare">Cosmetics & Skincare</option>
+              <option value="Watches & Accessories">Watches & Accessories</option>
+              <option value="Other">Other (Specify below)</option>
+            </select>
+          </div>
           <div class="form-group">
             <label for="ad-style">Targeted Ad Style</label>
             <select id="ad-style" required>
@@ -447,6 +470,13 @@
             </select>
           </div>
         </div>
+
+        <!-- Custom Niche specify field -->
+        <div class="form-group" id="other-niche-group" style="display: none;">
+          <label for="other-niche">Please Specify Niche</label>
+          <input type="text" id="other-niche" placeholder="e.g. Luxury Footwear">
+        </div>
+
         <div class="form-row">
           <div class="form-group">
             <label for="format-type">Creative Format</label>
@@ -472,7 +502,7 @@
   </div>
 </section>
 
-<!-- ---------- EMERALD GREEN FOOTER ---------- -->
+<!-- ---------- ROYAL COBALT BLUE FOOTER ---------- -->
 <footer class="footer-block">
   <div class="wrap">
     <div class="footer-grid">
@@ -491,7 +521,7 @@
       <div class="footer-col">
         <h5>Newsletter</h5>
         <div class="footer-newsletter">
-          <p style="font-size: 13.5px; color: rgba(11,10,9,0.7); margin: 0;">Subscribe to receive creative directing trends and early access offers.</p>
+          <p style="font-size: 13.5px; color: rgba(255,255,255,0.8); margin: 0;">Subscribe to receive creative directing trends and early access offers.</p>
           <div class="newsletter-row"><input type="email" placeholder="Your email"><button>Subscribe</button></div>
         </div>
       </div>
@@ -540,6 +570,17 @@
 </div>
 
 <script>
+function toggleNicheInput(selectElement) {
+  const otherGroup = document.getElementById('other-niche-group');
+  if (selectElement.value === 'Other') {
+    otherGroup.style.display = 'flex';
+    document.getElementById('other-niche').required = true;
+  } else {
+    otherGroup.style.display = 'none';
+    document.getElementById('other-niche').required = false;
+  }
+}
+
 function handleBriefSubmit(e) {
   e.preventDefault();
   const brand = document.getElementById('brand-name').value;

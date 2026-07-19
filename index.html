@@ -11,8 +11,8 @@
     --bg-hero: #FFFFFF; /* Pure White Hero block */
     --bg: #0B0A09; /* Deep dark obsidian black */
     --bg-card: #121110; /* Dark charcoal card */
-    --accent: #00E676; /* Electric Emerald/Lime Green from reference */
-    --accent-dark: #00B348;
+    --accent: #2643FF; /* Premium Electric Cobalt Blue from reference */
+    --accent-dark: #1A3BF5;
     --ink-dark: #0B0A09; /* Onyx text on white */
     --ink-light: #FAF9F6; /* Cream white on dark */
     --muted: #8E8A82; /* Slate bronze */
@@ -53,14 +53,14 @@
     overflow: hidden;
   }
   
-  /* Floating Capsule Navbar: Upgraded to light theme with black border for high-visibility black branding */
+  /* Floating Capsule Navbar */
   nav.hero-nav {
     display: flex; align-items: center; justify-content: space-between;
     padding: 12px 28px;
     margin-top: 24px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
-    border: 1px solid var(--ink-dark); /* Visible black border */
+    border: 1px solid var(--ink-dark);
     color: var(--ink-dark);
     border-radius: 100px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -70,7 +70,7 @@
     font-weight: 700; font-size: 20px; letter-spacing: 0.12em;
     display: flex; align-items: center; gap: 8px;
     text-transform: uppercase;
-    color: var(--ink-dark); /* Sharp solid black brand name */
+    color: var(--ink-dark);
   }
   .brand .star-icon{
     color: var(--accent-dark);
@@ -87,7 +87,7 @@
   }
   .nav-link{
     font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
-    text-transform: uppercase; color: rgba(11,10,9,0.7); /* Visible dark link text */
+    text-transform: uppercase; color: rgba(11,10,9,0.7);
     transition: color 0.15s ease;
   }
   .nav-link:hover{ color: var(--ink-dark); }
@@ -95,19 +95,19 @@
   .nav-cta{
     font-size: 12.5px; font-weight: 700; letter-spacing: 0.05em;
     text-transform: uppercase;
-    background: var(--ink-dark);
-    color: #fff;
+    background: var(--accent); /* Cobalt Blue Background */
+    color: #fff; /* White Write up */
     padding: 10px 20px;
     border-radius: 100px;
     transition: transform 0.2s ease, background 0.2s ease;
   }
-  .nav-cta:hover{ background: var(--accent-dark); color: var(--ink-dark); transform: translateY(-1px); }
+  .nav-cta:hover{ background: var(--ink-dark); color: #fff; transform: translateY(-1px); }
 
   /* Hero Main Content */
   header.hero { padding-top: 64px; }
   .hero-grid {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1.15fr 1fr;
     gap: 48px;
     align-items: center;
   }
@@ -125,7 +125,7 @@
     text-transform: uppercase;
   }
   .hero-left h1 span {
-    color: var(--accent-dark);
+    color: var(--accent);
   }
   
   .hero-left .sub {
@@ -150,7 +150,7 @@
   }
   .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
 
-  /* Right Side Hero Illustration (Matches model with overlays in reference) */
+  /* Right Side Hero Illustration */
   .hero-right-visual {
     position: relative;
     display: flex; justify-content: center; align-items: center;
@@ -161,12 +161,11 @@
     border-radius: var(--radius-lg);
     background-size: cover;
     background-position: center;
-    background-image: url('thumbs/perfume/parfum-gomme.jpg'); /*Mouthwatering bottle shot */
+    background-image: url('thumbs/perfume/parfum-gomme.jpg');
     position: relative;
     box-shadow: 0 30px 60px rgba(0,0,0,0.15);
   }
   
-  /* Circular sticker tag on bottom-left of image */
   .hero-badge-overlay {
     position: absolute;
     bottom: -15px; left: -20px;
@@ -180,7 +179,6 @@
     border: 1px solid var(--accent);
   }
   
-  /* Experience badge on right */
   .experience-tag {
     position: absolute;
     top: 40px; right: -30px;
@@ -195,7 +193,6 @@
   .experience-tag b { font-size: 16px; display: block; color: var(--ink-dark); }
   .experience-tag span { font-size: 11px; color: var(--muted); text-transform: uppercase; }
 
-  /* Overlay pills on the bottle image */
   .bottle-floating-action {
     position: absolute;
     bottom: 20px;
@@ -205,10 +202,10 @@
     font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
     padding: 8px 16px; border-radius: 100px;
   }
-  .float-pill.green { background: var(--accent); color: var(--ink-dark); }
+  .float-pill.green { background: var(--accent); color: #fff; } /* Blue background, white write up */
   .float-pill.black { background: var(--bg-dark); color: #fff; }
 
-  /* ---------- STATS BAR ---------- */
+  /* ---------- STATS BAR (Updated Copy to Look Highly Realistic) ---------- */
   .stats-bar {
     padding: 64px 0;
     background: var(--bg);
@@ -227,71 +224,89 @@
     font-size: 12.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
   }
 
-  /* ---------- MULTI-NICHE PORTFOLIO SHOWCASE ROW BY ROW (Homepage) ---------- */
-  section.niche-showcase {
-    padding: 80px 0;
+  /* ---------- MIXED CAMPAIGNS SHOWCASE (Homepage Grid) ---------- */
+  section.campaigns {
+    padding: 96px 0;
     border-bottom: 1px solid var(--line);
   }
-  .niche-row-header {
+  .campaigns-head {
     display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 40px; border-bottom: 1px solid var(--line); padding-bottom: 20px;
-    flex-wrap: wrap; gap: 16px;
+    margin-bottom: 56px; flex-wrap: wrap; gap: 20px;
   }
-  .niche-row-header h2 {
-    font-size: 28px; font-weight: 700; text-transform: uppercase; margin: 0; letter-spacing: -0.01em;
-  }
-  .niche-row-header h2 span { color: var(--accent); }
+  .campaigns-head h2 { font-size: 38px; font-weight: 700; text-transform: uppercase; margin: 0; }
+  .campaigns-head h2 span { color: var(--accent); }
   
-  .niche-explore-btn {
-    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
-    background: var(--bg-card); color: #fff; border: 1px solid var(--line);
-    padding: 10px 20px; border-radius: 100px;
-    display: inline-flex; align-items: center; gap: 6px;
+  .niche-nav-tabs {
+    display: flex; gap: 12px; flex-wrap: wrap;
+  }
+  .niche-tab-btn {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    border: 1px solid var(--line); color: var(--muted);
+    padding: 10px 22px; border-radius: 100px;
     transition: all 0.2s ease;
   }
-  .niche-explore-btn:hover { background: var(--accent); color: var(--ink-dark); border-color: var(--accent); transform: translateX(2px); }
-
-  .niche-grid-2col {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  .niche-tab-btn:hover, .niche-tab-btn.active {
+    background: var(--accent); color: #fff; border-color: var(--accent);
   }
+
+  .campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  
   .campaign-card {
     background: var(--bg-card);
     border: 1px solid var(--line);
     border-radius: var(--radius-lg);
     padding: 24px;
-    display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px;
-    align-items: center;
+    text-align: center;
+    position: relative;
     cursor: pointer;
     transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .campaign-card:hover {
     border-color: var(--accent);
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   }
+  
+  /* Upgraded Video Tab Layout: 9:16 aspect ratio vertical cover */
   .campaign-avatar-holder {
+    width: 100%;
     aspect-ratio: 9/16;
     border-radius: var(--radius);
+    margin: 0 auto 24px;
     overflow: hidden;
     border: 1px solid var(--line);
     position: relative;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    transition: transform 0.25s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
   }
-  .campaign-card:hover .campaign-avatar-holder { transform: scale(1.02); }
-  .campaign-avatar-video { width: 100%; height: 100%; object-fit: cover; }
+  .campaign-card:hover .campaign-avatar-holder {
+    border-color: var(--accent);
+    transform: scale(1.02);
+  }
   
-  .campaign-details h3 { font-size: 18px; font-weight: 700; margin: 0 0 6px; text-transform: uppercase; color: #fff; }
-  .campaign-details .sub-type { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 12px; }
-  .campaign-details p { font-size: 13px; color: var(--muted); margin: 0 0 16px; line-height: 1.5; }
-  .campaign-details .play-btn {
-    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-    background: rgba(255,255,255,0.03); border: 1px solid var(--line); color: #fff;
-    padding: 6px 14px; border-radius: 100px;
-    display: inline-flex; align-items: center; gap: 4px;
+  /* Blazing Fast Performance Optimization: set preload to none, lazy triggers play on hover */
+  .campaign-avatar-video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  
+  .campaign-card h3 { font-size: 19px; font-weight: 700; margin: 0 0 6px; text-transform: uppercase; }
+  .campaign-card .sub-type { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 16px; }
+  .campaign-card p { font-size: 13.5px; color: var(--muted); margin: 0 0 20px; line-height: 1.5; min-height: 60px; }
+  
+  .campaign-card .play-btn {
+    font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    background: var(--accent); color: #fff; /* Blue background, white text */
+    border: 1px solid var(--accent);
+    padding: 8px 18px; border-radius: 100px;
+    display: inline-flex; align-items: center; gap: 6px;
     transition: all 0.2s ease;
   }
-  .campaign-card:hover .play-btn { background: var(--accent); color: var(--ink-dark); border-color: var(--accent); }
+  .campaign-card:hover .play-btn { background: #fff; color: var(--ink-dark); border-color: #fff; }
 
   /* ---------- OUR SERVICES ---------- */
   section.services { padding: 96px 0 80px; }
@@ -330,10 +345,10 @@
   .rotating-ring-svg { position: absolute; top: 20px; right: 20px; width: 90px; height: 90px; animation: rotate-disc 12s linear infinite; }
   .service-perk-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .perk-mini-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; cursor: pointer; transition: all 0.2s ease; }
-  .perk-mini-card:hover { border-color: var(--line-dark); }
-  .perk-mini-card.green { background: var(--accent); color: var(--ink-dark); border-color: var(--accent); }
-  .perk-mini-card.green h4 { color: var(--ink-dark); }
-  .perk-mini-card.green span { color: rgba(11,10,9,0.7); }
+  .perk-mini-card:hover { border-color: var(--accent); }
+  .perk-mini-card.green { background: var(--accent); color: #fff; border-color: var(--accent); } /* Blue bg, white write up */
+  .perk-mini-card.green h4 { color: #fff; }
+  .perk-mini-card.green span { color: rgba(255,255,255,0.7); }
   .perk-mini-card h4 { font-size: 16px; font-weight: 700; margin: 0 0 10px; text-transform: uppercase; }
   .perk-mini-card span { font-size: 13px; color: var(--muted); display: block; line-height: 1.4; }
 
@@ -348,7 +363,7 @@
   section.brief-section{
     padding: 96px 0;
     border-top: 1px solid var(--line);
-    background: radial-gradient(circle at top right, rgba(0, 230, 118, 0.03), transparent 50%);
+    background: radial-gradient(circle at top right, rgba(38, 67, 255, 0.03), transparent 50%);
   }
   .brief-grid {
     display: grid;
@@ -377,40 +392,42 @@
 
   .brief-submit-btn {
     font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;
-    background: var(--accent); color: var(--ink-dark); border: none; border-radius: 100px; padding: 16px; font-size: 13.5px; cursor: pointer; transition: background 0.2s ease, transform 0.2s ease;
+    background: var(--accent); color: #fff; /* Blue background, white write up */
+    border: none; border-radius: 100px; padding: 16px; font-size: 13.5px; cursor: pointer; transition: background 0.2s ease, transform 0.2s ease;
     display: flex; align-items: center; justify-content: center; gap: 8px;
   }
-  .brief-submit-btn:hover { background: #fff; transform: translateY(-1px); }
+  .brief-submit-btn:hover { background: #fff; color: var(--ink-dark); transform: translateY(-1px); }
 
   .form-success-panel { text-align: center; padding: 20px 0; display: none; }
   .form-success-panel .icon { font-size: 48px; color: var(--accent); margin-bottom: 16px; display: block; }
   .form-success-panel h3 { font-size: 24px; margin: 0 0 8px; font-weight: 600; text-transform: uppercase; }
   .form-success-panel p { color: var(--muted); font-size: 15px; margin: 0; }
 
-  /* ---------- DETAILED EMERALD GREEN FOOTER ---------- */
+  /* ---------- DETAILED ROYAL COBALT BLUE FOOTER ---------- */
   .footer-block {
-    background: #00D65A; /* Deep Emerald Green from reference */
-    color: var(--ink-dark);
+    background: var(--accent); /* Cobalt Blue background matches buttons */
+    color: #FFFFFF; /* Crisp visible white text */
     border-top-left-radius: var(--radius-lg);
     border-top-right-radius: var(--radius-lg);
     padding: 80px 0;
   }
   .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
-  .footer-logo { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 20px; }
-  .footer-desc { font-size: 15px; color: rgba(11,10,9,0.7); max-width: 32ch; line-height: 1.6; }
-  .footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 20px; color: var(--ink-dark); }
+  .footer-logo { font-size: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 20px; color: #fff; }
+  .footer-desc { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 32ch; line-height: 1.6; }
+  .footer-col h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 20px; color: #fff; }
   .footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
-  .footer-col ul a { font-size: 14px; color: rgba(11,10,9,0.7); transition: color 0.2s; font-weight: 500; }
-  .footer-col ul a:hover { color: var(--ink-dark); }
+  .footer-col ul a { font-size: 14px; color: rgba(255,255,255,0.8); transition: color 0.2s; font-weight: 500; }
+  .footer-col ul a:hover { color: #fff; }
   .footer-newsletter { display: flex; flex-direction: column; gap: 16px; }
-  .footer-newsletter h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; }
-  .newsletter-row { display: flex; gap: 10px; background: rgba(0,0,0,0.06); border-radius: 100px; padding: 6px; border: 1px solid rgba(11,10,9,0.1); }
-  .newsletter-row input { background: none; border: none; outline: none; padding-left: 14px; color: var(--ink-dark); font-family: inherit; font-size: 13.5px; flex-grow: 1; }
-  .newsletter-row button { background: var(--ink-dark); color: #fff; border: none; border-radius: 100px; padding: 10px 18px; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
-  .newsletter-row button:hover { background: #1C1A18; }
-  .footer-bottom { border-top: 1px solid rgba(11,10,9,0.1); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: rgba(11,10,9,0.6); font-weight: 500; }
+  .footer-newsletter h5 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin: 0; color: #fff; }
+  .newsletter-row { display: flex; gap: 10px; background: rgba(255,255,255,0.15); border-radius: 100px; padding: 6px; border: 1px solid rgba(255,255,255,0.25); }
+  .newsletter-row input { background: none; border: none; outline: none; padding-left: 14px; color: #fff; font-family: inherit; font-size: 13.5px; flex-grow: 1; }
+  .newsletter-row input::placeholder { color: rgba(255,255,255,0.6); }
+  .newsletter-row button { background: #fff; color: var(--accent); border: none; border-radius: 100px; padding: 10px 18px; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .newsletter-row button:hover { background: #FAF9F6; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: rgba(255,255,255,0.7); font-weight: 500; }
 
-  /* ---------- WHATSAPP FLOATING BUTTON (Persuasive call track) ---------- */
+  /* ---------- WHATSAPP FLOATING BUTTON ---------- */
   .whatsapp-float {
     position: fixed;
     bottom: 24px; right: 24px;
@@ -470,7 +487,7 @@
   .ugc-phone.playing .ugc-disc { animation-play-state: running; }
   .ugc-caption-panel { position: absolute; bottom: 0; left: 0; right: 0; z-index: 6; background: linear-gradient(to top, rgba(11,10,9,0.98) 0%, rgba(11,10,9,0.6) 75%, transparent 100%); padding: 24px 20px 24px 20px; color: #fff; }
   .ugc-brand-handle { font-weight: 700; font-size: 14.5px; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: var(--ink-dark); font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: #fff; font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
   .ugc-caption-text { font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; line-height: 1.4; color: #E6E4E0; margin: 0 0 10px; min-height: 38px; text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
   .ugc-music-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); overflow: hidden; }
   .music-text-container { overflow: hidden; white-space: nowrap; width: 150px; }
@@ -483,13 +500,13 @@
     nav.hero-nav {
       padding: 8px 16px;
       margin-top: 12px;
-      flex-direction: row; /* Horizontal layout */
+      flex-direction: row;
       justify-content: space-between;
     }
     .brand { font-size: 15px; letter-spacing: 0.08em; }
     .nav-links { gap: 10px; }
     .nav-link { font-size: 10.5px; font-weight: 700; }
-    .nav-cta { display: none; } /* Hide duplicate CTA to give massive spacing */
+    .nav-cta { display: none; }
 
     /* Hero section layouts */
     .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
@@ -506,35 +523,17 @@
     .float-pill { font-size: 10px; padding: 6px 12px; }
 
     /* Form responsiveness card fixes */
-    .form-row { grid-template-columns: 1fr; gap: 12px; } /* Stack form inputs neatly */
+    .form-row { grid-template-columns: 1fr; gap: 12px; }
     .brief-form-card { padding: 24px 20px; }
     .brief-submit-btn { width: 100%; padding: 14px; }
 
-    /* Metrics grid */
-    .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 10px; }
-    .stat-item h2 { font-size: 32px; }
-    .stat-item span { font-size: 11px; }
-
-    /* Stacking card row layouts */
-    .niche-row-header { flex-direction: column; align-items: center; text-align: center; gap: 12px; }
-    .niche-row-header h2 { font-size: 24px; }
-    .niche-explore-btn { width: 100%; justify-content: center; }
-    .niche-grid-2col { grid-template-columns: 1fr; gap: 20px; }
-    .campaign-card { grid-template-columns: 1fr; gap: 20px; padding: 20px; text-align: center; }
-    .campaign-avatar-holder { width: 100%; max-width: 260px; margin: 0 auto; }
-    .campaign-details .play-btn { width: 100%; justify-content: center; }
-
-    /* Services layouts */
-    .services-grid { grid-template-columns: 1fr; gap: 40px; }
-    .services-left { align-items: center; text-align: center; }
-    .services-left h2 { font-size: 28px; }
-    .accordion-row h3 { font-size: 16px; }
-    .services-right { grid-template-columns: 1fr; }
-    .service-perk-cards { grid-template-columns: 1fr; }
-    .interactive-designer-card { aspect-ratio: 16/9; }
-
-    /* Subpages lists stacks */
+    /* Campaigns list stacks */
+    .campaigns-head { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
     .campaigns-grid, .gallery-grid, .brief-grid { grid-template-columns: 1fr; gap: 20px; }
+    .campaign-card { padding: 20px; }
+    .campaign-avatar-holder { width: 100%; max-width: 260px; margin: 0 auto 20px; }
+    .campaign-card .play-btn { width: 100%; justify-content: center; }
+
     .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
     .footer-logo, .footer-desc { align-self: center; margin: 0 auto; }
     .newsletter-row { max-width: 320px; margin: 0 auto; }
@@ -576,7 +575,7 @@
           </div>
           <div class="experience-tag">
             <div class="stars">★★★★★</div>
-            <b>10 Years</b>
+            <b>4 Years</b>
             <span>Experience</span>
           </div>
           <div class="hero-badge-overlay">CREATEBYMOH ✦ CINEMATIC ADS</div>
@@ -586,136 +585,116 @@
   </div>
 </div>
 
-<!-- ---------- METRICS BAR (Dark Background) ---------- -->
+<!-- ---------- STATS BAR (Updated Copy to Look Highly Realistic) ---------- -->
 <div class="stats-bar">
   <div class="wrap stats-grid">
     <div class="stat-item">
-      <h2>250+</h2>
+      <h2>50+</h2>
       <span>Brands Scaled</span>
     </div>
     <div class="stat-item">
-      <h2>10+</h2>
+      <h2>4+</h2>
       <span>Years Exp.</span>
     </div>
     <div class="stat-item">
-      <h2>50M+</h2>
+      <h2>20M+</h2>
       <span>Campaign Views</span>
     </div>
     <div class="stat-item">
-      <h2>$150M+</h2>
+      <h2>$15M+</h2>
       <span>Tracked Revenue</span>
     </div>
   </div>
 </div>
 
-<!-- ---------- MULTI-NICHE PORTFOLIO SHOWCASE ROW BY ROW (Homepage) ---------- -->
-<section class="wrap">
-  
-  <!-- ROW 1: PERFUME NICHE SHOWCASE -->
-  <div class="niche-showcase">
-    <div class="niche-row-header">
-      <h2>Fragrance Campaigns <span>✦ Perfumes</span></h2>
-      <a href="perfumes.html" class="niche-explore-btn">Explore Perfumes Portfolio ➔</a>
-    </div>
-    <div class="niche-grid-2col">
-      <div class="campaign-card" data-sample="parfum-gomme">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/perfume/parfum-gomme.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Parfum Homme</h3>
-          <span class="sub-type">Aquatic Ripples · 13s</span>
-          <p>Top: Sunlit Citrus | Heart: Aquatic Caustics | Base: Wet Mineral Stones</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
-      </div>
-      <div class="campaign-card" data-sample="sparda-amber">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/perfume/sparda-amber.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Sparda Oud</h3>
-          <span class="sub-type">Oud Amber Explosion · 13s</span>
-          <p>Top: Saffron Thread | Heart: Smoky Oud | Base: Golden Amber</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
-      </div>
+<!-- ---------- THE MASTER MIX CAMPAIGNS SHOWCASE (Homepage Grid) ---------- -->
+<section id="campaigns" class="campaigns wrap">
+  <div class="campaigns-head">
+    <h2>Master Campaign Showcase <span>✦ Mixed Niches</span></h2>
+    <div class="niche-nav-tabs">
+      <a href="perfumes.html" class="niche-tab-btn">Perfumes</a>
+      <a href="streetwear.html" class="niche-tab-btn">Streetwear</a>
+      <a href="jewelry.html" class="niche-tab-btn">Jewelry</a>
     </div>
   </div>
 
-  <!-- ROW 2: STREETWEAR NICHE SHOWCASE -->
-  <div class="niche-showcase">
-    <div class="niche-row-header">
-      <h2>Fashion Campaigns <span>✦ Streetwear</span></h2>
-      <a href="streetwear.html" class="niche-explore-btn">Explore Streetwear Portfolio ➔</a>
-    </div>
-    <div class="niche-grid-2col">
-      <div class="campaign-card" data-sample="shirt-swap">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/streetwear/shirt-swap.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Shirt Swap Transition</h3>
-          <span class="sub-type">Lifestyle UGC · 15s</span>
-          <p>Fast-paced, seamless garment transition cuts designed for high TikTok & Reels organic engagement.</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
+  <div class="campaigns-grid">
+    <!-- Campaign 1: Perfume Parfum Homme -->
+    <div class="campaign-card" data-sample="parfum-gomme">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/perfume/parfum-gomme.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="campaign-card" data-sample="hoodie-lookbook">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Oversized Hoodie</h3>
-          <span class="sub-type">Heavyweight Fleece · 12s</span>
-          <p>Tactile closeups highlighting premium fabric weight, relaxed boxy fits, and custom hem stitching.</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
-      </div>
+      <h3>Parfum Homme</h3>
+      <span class="sub-type">Perfume · Aquatic Ripples · 13s</span>
+      <p>Top: Sunlit Citrus | Heart: Aquatic Caustics | Base: Wet Mineral Stones</p>
+      <span class="play-btn">Play Campaign</span>
     </div>
-  </div>
 
-  <!-- ROW 3: JEWELRY NICHE SHOWCASE -->
-  <div class="niche-showcase">
-    <div class="niche-row-header">
-      <h2>Accessory Campaigns <span>✦ Jewelry</span></h2>
-      <a href="jewelry.html" class="niche-explore-btn">Explore Jewelry Portfolio ➔</a>
+    <!-- Campaign 2: Streetwear Shirt Swap -->
+    <div class="campaign-card" data-sample="shirt-swap">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/shirt-swap.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Shirt Swap Cut</h3>
+      <span class="sub-type">Streetwear · Transition UGC · 15s</span>
+      <p>Seamless garment swap cut designed for viral streetwear catalog discovery.</p>
+      <span class="play-btn">Play Campaign</span>
     </div>
-    <div class="niche-grid-2col">
-      <div class="campaign-card" data-sample="gilded-chain">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/jewelry/gilded-chain.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Classic Gilded Chain</h3>
-          <span class="sub-type">Luxury Closeups · 13s</span>
-          <p>Macro camera panners reflecting golden link caustics and hand-polished mirror finishes.</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
+
+    <!-- Campaign 3: Jewelry Gilded Chain -->
+    <div class="campaign-card" data-sample="gilded-chain">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/jewelry/gilded-chain.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="campaign-card" data-sample="gold-ring">
-        <div class="campaign-avatar-holder">
-          <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-            <source src="videos/jewelry/gold-ring.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="campaign-details">
-          <h3>Solid Gold Band</h3>
-          <span class="sub-type">Aesthetic Macro · 13s</span>
-          <p>Sleek, slow-panning cuts of raw gold bands casting geometric light arrays onto rich dark marble.</p>
-          <span class="play-btn">Play Campaign</span>
-        </div>
+      <h3>Classic Gilded Chain</h3>
+      <span class="sub-type">Jewelry · Luxury Closeups · 13s</span>
+      <p>Macro camera panning loops displaying golden reflections and mirror finishes.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <!-- Campaign 4: Perfume Sparda Oud -->
+    <div class="campaign-card" data-sample="sparda-amber">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/perfume/sparda-amber.mp4" type="video/mp4">
+        </video>
       </div>
+      <h3>Sparda Oud</h3>
+      <span class="sub-type">Perfume · Oud Amber Explosion · 13s</span>
+      <p>Top: Saffron Thread | Heart: Smoky Oud | Base: Golden Amber</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <!-- Campaign 5: Streetwear Oversized Hoodie -->
+    <div class="campaign-card" data-sample="hoodie-lookbook">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Oversized Hoodie</h3>
+      <span class="sub-type">Streetwear · Heavyweight Fleece · 12s</span>
+      <p>Tactile closeups highlighting premium fabric weight and relaxed boxy fits.</p>
+      <span class="play-btn">Play Campaign</span>
+    </div>
+
+    <!-- Campaign 6: Jewelry Gold Ring -->
+    <div class="campaign-card" data-sample="gold-ring">
+      <div class="campaign-avatar-holder">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/jewelry/gold-ring.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Solid Gold Band</h3>
+      <span class="sub-type">Jewelry · Aesthetic Macro · 13s</span>
+      <p>Sleek, slow-panning cuts of raw gold bands against deep obsidian stone.</p>
+      <span class="play-btn">Play Campaign</span>
     </div>
   </div>
 </section>
@@ -779,7 +758,7 @@
   </div>
 </div>
 
-<!-- ---------- BRIEF SUBMISSION & CONTACT FORM ---------- -->
+<!-- ---------- BRIEF REQUEST FORM (Direct Email Brief) ---------- -->
 <section id="request-sample" class="brief-section">
   <div class="wrap brief-grid">
     <div class="brief-info">
@@ -827,10 +806,13 @@
         <div class="form-row">
           <div class="form-group">
             <label for="niche-type">Industry Niche</label>
-            <select id="niche-type" required>
+            <select id="niche-type" required onchange="toggleNicheInput(this)">
               <option value="Perfume & Fragrance">Perfume & Fragrance</option>
               <option value="Streetwear Clothing">Streetwear Clothing</option>
               <option value="Fine Jewelry">Fine Jewelry</option>
+              <option value="Cosmetics & Skincare">Cosmetics & Skincare</option>
+              <option value="Watches & Accessories">Watches & Accessories</option>
+              <option value="Other">Other (Specify below)</option>
             </select>
           </div>
           <div class="form-group">
@@ -843,6 +825,12 @@
               <option value="Lifestyle & Aesthetic">Lifestyle & Aesthetic Ad</option>
             </select>
           </div>
+        </div>
+
+        <!-- Custom Niche input specify below -->
+        <div class="form-group" id="other-niche-group" style="display: none;">
+          <label for="other-niche">Please Specify Niche</label>
+          <input type="text" id="other-niche" placeholder="e.g. Luxury Footwear">
         </div>
 
         <div class="form-row">
@@ -889,7 +877,7 @@
   </div>
 </section>
 
-<!-- ---------- DETAILED EMERALD GREEN FOOTER ---------- -->
+<!-- ---------- DETAILED ROYAL COBALT BLUE FOOTER ---------- -->
 <footer class="footer-block">
   <div class="wrap">
     <div class="footer-grid">
@@ -910,7 +898,7 @@
       <div class="footer-col">
         <h5>Newsletter</h5>
         <div class="footer-newsletter">
-          <p style="font-size: 13.5px; color: rgba(11,10,9,0.7); margin: 0;">Subscribe to receive creative directing trends and early access offers.</p>
+          <p style="font-size: 13.5px; color: rgba(255,255,255,0.8); margin: 0;">Subscribe to receive creative directing trends and early access offers.</p>
           <div class="newsletter-row">
             <input type="email" placeholder="Your email">
             <button>Subscribe</button>
@@ -951,10 +939,7 @@
         </div>
         <div class="ugc-progress-container"><div class="ugc-progress-bar"></div></div>
         <div class="ugc-sidebar">
-          <div class="ugc-action-btn" id="ugc-like-btn">
-            <div class="heart-icon">❤️</div>
-            <span class="count" id="ugc-likes-count">14.2K</span>
-          </div>
+          <div class="ugc-action-btn" id="ugc-like-btn"><div class="heart-icon">❤️</div><span class="count" id="ugc-likes-count">14.2K</span></div>
           <div class="ugc-action-btn"><div class="comment-icon">💬</div><span class="count">248</span></div>
           <div class="ugc-action-btn"><div class="share-icon">🔗</div><span class="count">832</span></div>
           <div class="ugc-disc-container"><div class="ugc-disc">💿</div></div>
@@ -973,11 +958,25 @@
 </div>
 
 <script>
+function toggleNicheInput(selectElement) {
+  const otherGroup = document.getElementById('other-niche-group');
+  if (selectElement.value === 'Other') {
+    otherGroup.style.display = 'flex';
+    document.getElementById('other-niche').required = true;
+  } else {
+    otherGroup.style.display = 'none';
+    document.getElementById('other-niche').required = false;
+  }
+}
+
 function handleBriefSubmit(e) {
   e.preventDefault();
   const brand = document.getElementById('brand-name').value;
   const email = document.getElementById('contact-email').value;
-  const niche = document.getElementById('niche-type').value;
+  let niche = document.getElementById('niche-type').value;
+  if (niche === 'Other') {
+    niche = document.getElementById('other-niche').value;
+  }
   const style = document.getElementById('ad-style').value;
   const format = document.getElementById('format-type').value;
   const name = document.getElementById('perfume-name').value;
@@ -1020,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const samplesData = {
     'parfum-gomme': { handle: '@parfum_homme', caption: "Sunlit pool water ripples casting caustic glow frames onto aquatic bottle shots.", video: 'videos/perfume/parfum-gomme.mp4', likes: '14.2K' },
-    'sparda-amber': { handle: '@sparda_parfums', caption: "smoky sand explosion orbiting premium oud glass bottle.", video: 'videos/perfume/sparda-amber.mp4', likes: '18.9K' },
+    'sparda-amber': { handle: '@sparda_parfums', caption: "smoky sand explosion orbiting gold amber luxury bottle.", video: 'videos/perfume/sparda-amber.mp4', likes: '18.9K' },
     'shirt-swap': { handle: '@streetwear_swap', caption: "Garment transition cut sequence designed for streetwear lookbooks.", video: 'videos/streetwear/shirt-swap.mp4', likes: '22.4K' },
     'hoodie-lookbook': { handle: '@hoodie_labs', caption: "Tactile closeups highlighting premium relaxed heavyweight fleece fits.", video: 'videos/streetwear/hoodie-lookbook.mp4', likes: '15.6K' },
     'gilded-chain': { handle: '@gilded_jewelers', caption: "Macro gold chain links panners reflecting detailed custom caustics.", video: 'videos/jewelry/gilded-chain.mp4', likes: '12.8K' },
