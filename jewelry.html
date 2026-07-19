@@ -85,7 +85,7 @@
   .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
 
   .hero-right-visual { position: relative; display: flex; justify-content: center; align-items: center; }
-  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/jewelry/IMG_9439.JPG'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/jewelry-main.jpg'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
   .hero-badge-overlay { position: absolute; bottom: -15px; left: -20px; background: var(--bg-dark); color: #fff; padding: 14px 20px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 1px solid var(--accent); }
   
   .experience-tag { position: absolute; top: 40px; right: -30px; background: #fff; border: 1px solid var(--line); padding: 12px 20px; border-radius: var(--radius); text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
@@ -419,13 +419,13 @@
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9436.JPG');"></div><div class="gallery-overlay"><b>Gilded Choker</b><span>Link Choker</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9437.JPG');"></div><div class="gallery-overlay"><b>Silver Chain</b><span>Micro Link</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9438.JPG');"></div><div class="gallery-overlay"><b>Diamond Earring</b><span>Pavé Studs</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9446.JPG');"></div><div class="gallery-overlay"><b>Gold Signet</b><span>Engraved Crest</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9448.JPG');"></div><div class="gallery-overlay"><b>Crystal Pendant</b><span>Emerald Cut</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9449.JPG');"></div><div class="gallery-overlay"><b>Platinum Cuff</b><span>Brushed Finished</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9450.JPG');"></div><div class="gallery-overlay"><b>Tennis Bracelet</b><span>Solitaire Chain</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-gilded-chain.jpg');"></div><div class="gallery-overlay"><b>Gilded Choker</b><span>Link Choker</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-gold-ring.jpg');"></div><div class="gallery-overlay"><b>Silver Chain</b><span>Micro Link</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-main.jpg');"></div><div class="gallery-overlay"><b>Diamond Earring</b><span>Pavé Studs</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/velario-aurus.jpg');"></div><div class="gallery-overlay"><b>Gold Signet</b><span>Engraved Crest</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/crrauie-ruby.jpg');"></div><div class="gallery-overlay"><b>Crystal Pendant</b><span>Emerald Cut</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/sila-diffuser.jpg');"></div><div class="gallery-overlay"><b>Platinum Cuff</b><span>Brushed Finished</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/skincare-poster.jpg');"></div><div class="gallery-overlay"><b>Tennis Bracelet</b><span>Solitaire Chain</span></div></div>
   </div>
 </section>
 
@@ -570,17 +570,6 @@
 </div>
 
 <script>
-function toggleNicheInput(selectElement) {
-  const otherGroup = document.getElementById('other-niche-group');
-  if (selectElement.value === 'Other') {
-    otherGroup.style.display = 'flex';
-    document.getElementById('other-niche').required = true;
-  } else {
-    otherGroup.style.display = 'none';
-    document.getElementById('other-niche').required = false;
-  }
-}
-
 function handleBriefSubmit(e) {
   e.preventDefault();
   const brand = document.getElementById('brand-name').value;
