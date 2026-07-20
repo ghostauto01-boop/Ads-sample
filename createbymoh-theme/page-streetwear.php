@@ -78,7 +78,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="shirt-swap">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/shirt-swap.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/shirt-swap.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Shirt Swap Transition</h3>
@@ -90,7 +90,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="hoodie-lookbook">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Oversized Hoodie</h3>
@@ -102,7 +102,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="tracksuit">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/tracksuit.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/tracksuit.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Tracksuit Campaign</h3>
@@ -114,7 +114,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="retro-tee">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/retro-tee.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/retro-tee.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Retro Tee Lookbook</h3>
@@ -126,7 +126,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="cargo-sweatpants">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/cargo-sweatpants.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/cargo-sweatpants.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Cargo Sweatpants Drop</h3>
@@ -138,7 +138,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="heavyweight-fleece">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/heavyweight-fleece.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/heavyweight-fleece.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Heavyweight Fleece</h3>
@@ -155,29 +155,29 @@ get_header(); ?>
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_7931.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7931</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_7936.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7936</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_7957.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7957</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_7958.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7958</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8052.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8052</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8053.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8053</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8057.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8057</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8060.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8060</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8063.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8063</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8065.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8065</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8098.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8098</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8112.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8112</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8113.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8113</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8116.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8116</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8117.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8117</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8123.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8123</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8124.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8124</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8128.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8128</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8129.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8129</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8130.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8130</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8531.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8531</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_8533.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8533</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/streetwear/IMG_9269.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_9269</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_7931.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7931</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_7936.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7936</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_7957.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7957</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_7958.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_7958</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8052.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8052</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8053.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8053</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8057.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8057</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8060.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8060</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8063.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8063</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8065.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8065</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8098.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8098</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8112.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8112</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8113.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8113</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8116.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8116</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8117.JPG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8117</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8123.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8123</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8124.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8124</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8128.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8128</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8129.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8129</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8130.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8130</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8531.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8531</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_8533.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_8533</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/streetwear/IMG_9269.PNG');"></div><div class="gallery-overlay"><b>Streetwear Concept</b><span>IMG_9269</span></div></div>
   </div>
 </section>
 

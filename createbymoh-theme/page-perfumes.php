@@ -78,7 +78,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="parfum-gomme">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/parfum-gomme.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/parfum-gomme.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Parfum Homme</h3>
@@ -90,7 +90,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="bleu-chanel">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/bleu-chanel.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/bleu-chanel.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Bleu de Chanel</h3>
@@ -102,7 +102,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="sparda-amber">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/sparda-amber.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/sparda-amber.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Sparda Oud</h3>
@@ -114,7 +114,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="lost-cherry">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/lost-cherry.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/lost-cherry.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Lost Cherry</h3>
@@ -126,7 +126,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="oud-greatness">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/oud-greatness.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/oud-greatness.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Oud for Greatness</h3>
@@ -138,7 +138,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="evien-blossom">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/evien-blossom.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/evien-blossom.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Evien Parfums</h3>
@@ -155,19 +155,19 @@ get_header(); ?>
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_8973.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8973</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_8974.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8974</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_8987.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8987</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_8988.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8988</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9019.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9019</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9021.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9021</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9023.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9023</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9051.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9051</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9052.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9052</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9056.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9056</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9058.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9058</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9062.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9062</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/perfume/IMG_9082.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9082</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_8973.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8973</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_8974.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8974</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_8987.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8987</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_8988.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8988</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9019.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9019</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9021.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9021</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9023.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9023</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9051.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9051</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9052.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9052</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9056.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9056</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9058.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9058</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9062.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9062</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/perfume/IMG_9082.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9082</span></div></div>
   </div>
 </section>
 

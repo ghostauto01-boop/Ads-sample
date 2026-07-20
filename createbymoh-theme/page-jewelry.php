@@ -78,7 +78,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="gilded-chain">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/gilded-chain.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gilded-chain.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Classic Gilded Chain</h3>
@@ -90,7 +90,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="diamond-pendant">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/diamond-pendant.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/diamond-pendant.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Frosted Diamond Pendant</h3>
@@ -102,7 +102,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="silver-band">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/silver-band.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/silver-band.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Heavy Silver Band</h3>
@@ -114,7 +114,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="crystal-cuff">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/crystal-cuff.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/crystal-cuff.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Prism Crystal Cuff</h3>
@@ -126,7 +126,7 @@ get_header(); ?>
     <div class="campaign-card" data-sample="gold-ring">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/gold-ring.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gold-ring.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Solid Gold Band</h3>
@@ -143,25 +143,25 @@ get_header(); ?>
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9436.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9436</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9437.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9437</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9438.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9438</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9439.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9439</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9440.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9440</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9446.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9446</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9447.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9447</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9448.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9448</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9449.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9449</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9450.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9450</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9451.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9451</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9452.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9452</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9453.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9453</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9454.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9454</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9455.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9455</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9456.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9456</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9457.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9457</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9458.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9458</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/thumbs/jewelry/IMG_9459.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9459</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9436.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9436</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9437.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9437</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9438.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9438</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9439.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9439</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9440.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9440</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9446.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9446</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9447.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9447</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9448.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9448</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9449.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9449</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9450.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9450</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9451.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9451</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9452.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9452</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9453.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9453</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9454.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9454</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9455.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9455</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9456.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9456</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9457.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9457</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9458.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9458</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/jewelry/IMG_9459.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9459</span></div></div>
   </div>
 </section>
 

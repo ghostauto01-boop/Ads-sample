@@ -166,7 +166,7 @@ Text Domain: createbymoh
     border-radius: var(--radius-lg);
     background-size: cover;
     background-position: center;
-    background-image: url('thumbs/parfum-gomme.jpg');
+    background-image: url('assets/images/parfum-gomme.jpg');
     position: relative;
     box-shadow: 0 30px 60px rgba(0,0,0,0.15);
   }
@@ -331,7 +331,7 @@ Text Domain: createbymoh
   .interactive-designer-card {
     background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--line);
     padding: 24px; position: relative; aspect-ratio: 16/10; overflow: hidden; display: flex; align-items: flex-end;
-    background-image: linear-gradient(to top, rgba(11,10,9,0.8), transparent), url('thumbs/lost-cherry.jpg');
+    background-image: linear-gradient(to top, rgba(11,10,9,0.8), transparent), url('assets/images/lost-cherry.jpg');
     background-size: cover; background-position: center;
   }
   .rotating-ring-svg { position: absolute; top: 20px; right: 20px; width: 90px; height: 90px; animation: rotate-disc 12s linear infinite; }

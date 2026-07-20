@@ -81,7 +81,7 @@
     <div class="campaign-card" data-sample="parfum-gomme">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/parfum-gomme.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/parfum-gomme.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Parfum Homme</h3>
@@ -94,7 +94,7 @@
     <div class="campaign-card" data-sample="shirt-swap">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/shirt-swap.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/shirt-swap.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Shirt Swap Cut</h3>
@@ -107,7 +107,7 @@
     <div class="campaign-card" data-sample="gilded-chain">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/gilded-chain.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gilded-chain.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Classic Gilded Chain</h3>
@@ -120,7 +120,7 @@
     <div class="campaign-card" data-sample="sparda-amber">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/perfume/sparda-amber.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/sparda-amber.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Sparda Oud</h3>
@@ -133,7 +133,7 @@
     <div class="campaign-card" data-sample="hoodie-lookbook">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Oversized Hoodie</h3>
@@ -146,7 +146,7 @@
     <div class="campaign-card" data-sample="gold-ring">
       <div class="campaign-avatar-holder">
         <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
-          <source src="<?php echo get_template_directory_uri(); ?>/videos/jewelry/gold-ring.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gold-ring.mp4" type="video/mp4">
         </video>
       </div>
       <h3>Solid Gold Band</h3>

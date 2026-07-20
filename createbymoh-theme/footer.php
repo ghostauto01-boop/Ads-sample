@@ -138,12 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const likesCount = document.getElementById('ugc-likes-count');
   
   const samplesData = {
-    'parfum-gomme': { handle: '@parfum_homme', caption: "Sunlit pool water ripples casting caustic glow frames onto aquatic bottle shots.", video: '<?php echo get_template_directory_uri(); ?>/videos/perfume/parfum-gomme.mp4', likes: '14.2K' },
-    'sparda-amber': { handle: '@sparda_parfums', caption: "smoky sand explosion orbiting gold amber luxury bottle.", video: '<?php echo get_template_directory_uri(); ?>/videos/perfume/sparda-amber.mp4', likes: '18.9K' },
-    'shirt-swap': { handle: '@streetwear_swap', caption: "Garment transition cut sequence designed for streetwear lookbooks.", video: '<?php echo get_template_directory_uri(); ?>/videos/streetwear/shirt-swap.mp4', likes: '22.4K' },
-    'hoodie-lookbook': { handle: '@hoodie_labs', caption: "Tactile closeups highlighting premium relaxed heavyweight fleece fits.", video: '<?php echo get_template_directory_uri(); ?>/videos/streetwear/hoodie-lookbook.mp4', likes: '15.6K' },
-    'gilded-chain': { handle: '@gilded_jewelers', caption: "Macro gold chain links panners reflecting detailed custom caustics.", video: '<?php echo get_template_directory_uri(); ?>/videos/jewelry/gilded-chain.mp4', likes: '12.8K' },
-    'gold-ring': { handle: '@aurus_rings', caption: "Classic gold band panning shots reflecting warm geometric lighting.", video: '<?php echo get_template_directory_uri(); ?>/videos/jewelry/gold-ring.mp4', likes: '9.4K' }
+    'parfum-gomme': { handle: '@parfum_homme', caption: "Sunlit pool water ripples casting caustic glow frames onto aquatic bottle shots.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/parfum-gomme.mp4', likes: '14.2K' },
+    'sparda-amber': { handle: '@sparda_parfums', caption: "smoky sand explosion orbiting gold amber luxury bottle.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/perfume/sparda-amber.mp4', likes: '18.9K' },
+    'shirt-swap': { handle: '@streetwear_swap', caption: "Garment transition cut sequence designed for streetwear lookbooks.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/shirt-swap.mp4', likes: '22.4K' },
+    'hoodie-lookbook': { handle: '@hoodie_labs', caption: "Tactile closeups highlighting premium relaxed heavyweight fleece fits.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/streetwear/hoodie-lookbook.mp4', likes: '15.6K' },
+    'gilded-chain': { handle: '@gilded_jewelers', caption: "Macro gold chain links panners reflecting detailed custom caustics.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gilded-chain.mp4', likes: '12.8K' },
+    'gold-ring': { handle: '@aurus_rings', caption: "Classic gold band panning shots reflecting warm geometric lighting.", video: '<?php echo get_template_directory_uri(); ?>/assets/videos/jewelry/gold-ring.mp4', likes: '9.4K' }
   };
   
   let currentSample = null;
