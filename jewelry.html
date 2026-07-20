@@ -73,7 +73,7 @@
   .nav-link:hover{ color: var(--ink-dark); }
   
   .nav-cta{ font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 100px; transition: transform 0.2s ease, background 0.2s ease; }
-  .nav-cta:hover{ background: var(--ink-dark); color: #fff; transform: translateY(-1px); }
+  .nav-cta:hover{ background: var(--accent-dark); color: #fff; transform: translateY(-1px); }
 
   header.hero { padding-top: 64px; }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; }
@@ -85,7 +85,7 @@
   .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
 
   .hero-right-visual { position: relative; display: flex; justify-content: center; align-items: center; }
-  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/jewelry-main.jpg'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/jewelry/IMG_9439.JPG'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
   .hero-badge-overlay { position: absolute; bottom: -15px; left: -20px; background: var(--bg-dark); color: #fff; padding: 14px 20px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 1px solid var(--accent); }
   
   .experience-tag { position: absolute; top: 40px; right: -30px; background: #fff; border: 1px solid var(--line); padding: 12px 20px; border-radius: var(--radius); text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
@@ -112,7 +112,7 @@
   .campaign-card .play-btn { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; background: var(--accent); border: 1px solid var(--accent); color: #fff; padding: 8px 18px; border-radius: 100px; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
   .campaign-card:hover .play-btn { background: #fff; color: var(--ink-dark); border-color: #fff; }
 
-  /* ---------- GALLERY / ART PORTFOLIO ---------- */
+  /* ---------- GALLERY / ART PORTFOLIO (Showcasing all 19 real jewelry images!) ---------- */
   section.gallery { padding: 40px 0 80px; border-top: 1px solid var(--line); }
   .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
   .gallery-item { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; position: relative; border: 1px solid var(--line); cursor: pointer; }
@@ -223,14 +223,6 @@
   .ugc-disc-container { margin-top: 4px; }
   .ugc-disc { font-size: 26px; animation: rotate-disc 4s linear infinite; animation-play-state: paused; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
   .ugc-phone.playing .ugc-disc { animation-play-state: running; }
-  .ugc-caption-panel { position: absolute; bottom: 0; left: 0; right: 0; z-index: 6; background: linear-gradient(to top, rgba(11,10,9,0.98) 0%, rgba(11,10,9,0.6) 75%, transparent 100%); padding: 24px 20px 24px 20px; color: #fff; }
-  .ugc-brand-handle { font-weight: 700; font-size: 14.5px; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-  .ugc-brand-handle::after { content: 'CAMPAIGN'; background: var(--accent); color: #fff; font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
-  .ugc-caption-text { font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; line-height: 1.4; color: #E6E4E0; margin: 0 0 10px; min-height: 38px; text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
-  .ugc-music-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); overflow: hidden; }
-  .music-text-container { overflow: hidden; white-space: nowrap; width: 150px; }
-  .music-text { display: inline-block; padding-left: 100%; animation: marquee 8s linear infinite; animation-play-state: paused; }
-  .ugc-phone.playing .music-text { animation-play-state: running; }
 
   /* ---------- MOBILE STYLING FIXES (Strict alignment / zero overlap) ---------- */
   @media (max-width: 768px){
@@ -290,7 +282,7 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="perfumes.html" class="nav-link">Perfumes</a>
-        <a href="streetwear.html" class="nav-link">Streetwear</a>
+        <a href="jewelry.html" class="nav-link">Jewelry</a>
       </div>
       <a class="nav-cta" href="#request-sample">Let's Talk</a>
     </nav>
@@ -322,7 +314,7 @@
   </div>
 </div>
 
-<!-- ---------- STATS BAR (Updated Copy to Look Highly Realistic) ---------- -->
+<!-- ---------- STATS BAR ---------- -->
 <div class="stats-bar">
   <div class="wrap stats-grid">
     <div class="stat-item">
@@ -413,19 +405,31 @@
   </div>
 </section>
 
-<!-- ---------- GALLERY / ART PORTFOLIO ---------- -->
+<!-- ---------- GALLERY / ART PORTFOLIO (Showcasing all 19 real jewelry images!) ---------- -->
 <section id="gallery" class="gallery wrap">
   <div class="campaigns-head">
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-gilded-chain.jpg');"></div><div class="gallery-overlay"><b>Gilded Choker</b><span>Link Choker</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-gold-ring.jpg');"></div><div class="gallery-overlay"><b>Silver Chain</b><span>Micro Link</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry-main.jpg');"></div><div class="gallery-overlay"><b>Diamond Earring</b><span>Pavé Studs</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/velario-aurus.jpg');"></div><div class="gallery-overlay"><b>Gold Signet</b><span>Engraved Crest</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/crrauie-ruby.jpg');"></div><div class="gallery-overlay"><b>Crystal Pendant</b><span>Emerald Cut</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/sila-diffuser.jpg');"></div><div class="gallery-overlay"><b>Platinum Cuff</b><span>Brushed Finished</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/skincare-poster.jpg');"></div><div class="gallery-overlay"><b>Tennis Bracelet</b><span>Solitaire Chain</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9436.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9436</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9437.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9437</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9438.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9438</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9439.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9439</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9440.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9440</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9446.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9446</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9447.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9447</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9448.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9448</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9449.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9449</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9450.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9450</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9451.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9451</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9452.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9452</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9453.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9453</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9454.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9454</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9455.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9455</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9456.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9456</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9457.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9457</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9458.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9458</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/jewelry/IMG_9459.JPG');"></div><div class="gallery-overlay"><b>Jewelry Concept</b><span>IMG_9459</span></div></div>
   </div>
 </section>
 
@@ -570,6 +574,17 @@
 </div>
 
 <script>
+function toggleNicheInput(selectElement) {
+  const otherGroup = document.getElementById('other-niche-group');
+  if (selectElement.value === 'Other') {
+    otherGroup.style.display = 'flex';
+    document.getElementById('other-niche').required = true;
+  } else {
+    otherGroup.style.display = 'none';
+    document.getElementById('other-niche').required = false;
+  }
+}
+
 function handleBriefSubmit(e) {
   e.preventDefault();
   const brand = document.getElementById('brand-name').value;
