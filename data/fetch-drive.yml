@@ -1,0 +1,74 @@
+name: fetch-drive
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-drive.yml'
+      - 'data/drive-manifest.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download folders via gdown (primary)
+        continue-on-error: true
+        run: |
+          pip install -q gdown
+          mkdir -p drive-content/perfume drive-content/streetwear drive-content/jewelry
+          gdown --folder "https://drive.google.com/drive/folders/11NXv2iHZjgOa8t8iMDpHN-CzFiuKppzy" -O drive-content/perfume --no-cookies || true
+          gdown --folder "https://drive.google.com/drive/folders/1gQPmjRRBabsHW_06xBI1noqeLogW-P7N" -O drive-content/streetwear --no-cookies || true
+          gdown --folder "https://drive.google.com/drive/folders/1dch6Dhp5HvD9tb3N0uQZyb-6ZTKmN3Ud" -O drive-content/jewelry --no-cookies || true
+          echo "after gdown:"; for n in perfume streetwear jewelry; do echo "$n: $(ls drive-content/$n 2>/dev/null | wc -l) files"; done
+
+      - name: Fill missing/failed files via direct manifest download
+        run: |
+          if [ ! -f data/drive-manifest.txt ]; then echo "no manifest present, skipping fallback"; exit 0; fi
+          total=0; fetched=0
+          while IFS='|' read -r niche name id; do
+            [ -z "$niche" ] && continue
+            total=$((total+1))
+            f="drive-content/$niche/$name"
+            need=0
+            if [ ! -s "$f" ]; then need=1; fi
+            if [ -f "$f" ] && head -c 15 "$f" | grep -qi '<!DOCTYPE html'; then need=1; fi
+            if [ $need -eq 1 ]; then
+              fetched=$((fetched+1))
+              ok=0
+              for attempt in 1 2 3 4; do
+                if curl -sfL --retry 2 --retry-all-errors "https://drive.usercontent.google.com/download?id=$id&export=download&confirm=t" -o "$f"; then
+                  if [ -s "$f" ] && ! head -c 15 "$f" | grep -qi '<!DOCTYPE html'; then ok=1; break; fi
+                fi
+                sleep $((attempt*2))
+              done
+              [ $ok -eq 1 ] && echo "OK  $niche/$name" || echo "FAIL $niche/$name ($id)"
+            fi
+          done < data/drive-manifest.txt
+          echo "manifest=$total downloaded-by-manifest=$fetched"
+          echo "final counts:"; for n in perfume streetwear jewelry; do echo "$n: $(ls drive-content/$n | wc -l) files"; done
+
+      - name: Commit results to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add drive-content
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+          else
+            git commit -m "Import Google Drive content (perfume 36, streetwear 47, jewelry 24) [skip ci]"
+            git push && echo "PUSH_OK" || echo "PUSH_FAILED"
+          fi
+
+      - name: Upload artifact (backup delivery)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: drive-content
+          path: drive-content
+          retention-days: 7
+          if-no-files-found: warn
