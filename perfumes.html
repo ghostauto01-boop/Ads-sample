@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CREATEBYMOH — Luxury Perfume & Fragrance Ad Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preload" as="image" href="thumbs/versace-wave.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -85,7 +88,7 @@
   .hero-left .btn-secondary:hover { background: var(--ink-dark); color: #fff; }
 
   .hero-right-visual { position: relative; display: flex; justify-content: center; align-items: center; }
-  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/perfume/IMG_8973.jpeg'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+  .hero-main-img { width: 320px; height: 400px; border-radius: var(--radius-lg); background-size: cover; background-position: center; background-image: url('thumbs/versace-wave.jpg'); position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
   .hero-badge-overlay { position: absolute; bottom: -15px; left: -20px; background: var(--bg-dark); color: #fff; padding: 14px 20px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 1px solid var(--accent); }
   
   .experience-tag { position: absolute; top: 40px; right: -30px; background: #fff; border: 1px solid var(--line); padding: 12px 20px; border-radius: var(--radius); text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
@@ -118,6 +121,7 @@
   .gallery-item { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; position: relative; border: 1px solid var(--line); cursor: pointer; }
   .gallery-item-img { width: 100%; height: 100%; background-size: cover; background-position: center; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
   .gallery-item:hover .gallery-item-img { transform: scale(1.08); }
+  .gallery-item-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .gallery-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(11,10,9,0.9) 0%, rgba(11,10,9,0.3) 60%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; }
   .gallery-item:hover .gallery-overlay { opacity: 1; }
   .gallery-overlay b { font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; color: #fff; font-weight: 400; }
@@ -345,7 +349,7 @@
   <div class="campaigns-grid">
     <div class="campaign-card" data-sample="parfum-gomme">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/parfum-gomme.jpg">
           <source src="videos/perfume/parfum-gomme.mp4" type="video/mp4">
         </video>
       </div>
@@ -357,7 +361,7 @@
 
     <div class="campaign-card" data-sample="bleu-chanel">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/bleu-chanel.jpg">
           <source src="videos/perfume/bleu-chanel.mp4" type="video/mp4">
         </video>
       </div>
@@ -369,7 +373,7 @@
 
     <div class="campaign-card" data-sample="sparda-amber">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/sparda-amber.jpg">
           <source src="videos/perfume/sparda-amber.mp4" type="video/mp4">
         </video>
       </div>
@@ -381,7 +385,7 @@
 
     <div class="campaign-card" data-sample="lost-cherry">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/lost-cherry.jpg">
           <source src="videos/perfume/lost-cherry.mp4" type="video/mp4">
         </video>
       </div>
@@ -393,7 +397,7 @@
 
     <div class="campaign-card" data-sample="oud-greatness">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/oud-greatness.jpg">
           <source src="videos/perfume/oud-greatness.mp4" type="video/mp4">
         </video>
       </div>
@@ -405,7 +409,7 @@
 
     <div class="campaign-card" data-sample="evien-blossom">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/evien-blossom.jpg">
           <source src="videos/perfume/evien-blossom.mp4" type="video/mp4">
         </video>
       </div>
@@ -417,25 +421,20 @@
   </div>
 </section>
 
-<!-- ---------- GALLERY / ART PORTFOLIO (Only Real Perfume Images) ---------- -->
+<!-- ---------- GALLERY / ART PORTFOLIO (Curated optimized showcase) ---------- -->
 <section id="gallery" class="gallery wrap">
   <div class="campaigns-head">
     <h2>Art Direction Universe</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_8973.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8973</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_8974.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8974</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_8987.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8987</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_8988.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_8988</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9019.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9019</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9021.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9021</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9023.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9023</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9051.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9051</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9052.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9052</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9056.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9056</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9058.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9058</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9062.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9062</span></div></div>
-    <div class="gallery-item"><div class="gallery-item-img" style="background-image: url('thumbs/perfume/IMG_9082.jpeg');"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>IMG_9082</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/sparda-amber.jpg" alt="Sparda Amber ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Sparda Amber</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/tom-wood.jpg" alt="Tom Wood ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Tom Wood</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/sila-diffuser.jpg" alt="Sila Diffuser ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Sila Diffuser</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/mancera-tobacco.jpg" alt="Mancera Tobacco ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Mancera Tobacco</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/velario-aurus.jpg" alt="Velario Aurus ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Velario Aurus</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/crrauie-ruby.jpg" alt="Crrauie Ruby ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Crrauie Ruby</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/lost-cherry.jpg" alt="Lost Cherry ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Lost Cherry</span></div></div>
+    <div class="gallery-item"><div class="gallery-item-img"><img src="thumbs/versace-sand.jpg" alt="Versace Sand ad concept" loading="lazy" decoding="async"></div><div class="gallery-overlay"><b>Fragrance Concept</b><span>Versace Sand</span></div></div>
   </div>
 </section>
 
@@ -717,6 +716,82 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === ' ' && modal.classList.contains('active')) { e.preventDefault(); togglePlay(); }
   });
 });
+</script>
+
+
+<script>
+/* CREATEBYMOH — media speed & autoplay manager
+   Lazy-loads campaign videos only near the viewport, guarantees muted
+   autoplay across browsers, pauses offscreen/hidden videos to save data
+   and CPU, and swaps in the poster image if a video file is missing. */
+(function () {
+  var gridVideos = Array.prototype.slice.call(document.querySelectorAll('video.campaign-avatar-video'));
+  if (!gridVideos.length) return;
+
+  function prime(v) { v.muted = true; v.playsInline = true; v.setAttribute('muted', ''); }
+
+  function safePlay(v) {
+    prime(v);
+    var p = v.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(function () {
+        var resume = function () { safePlay(v); };
+        document.addEventListener('pointerdown', resume, { once: true });
+        document.addEventListener('touchstart', resume, { once: true, passive: true });
+        document.addEventListener('keydown', resume, { once: true });
+      });
+    }
+  }
+
+  function loadAndPlay(v) {
+    if (!v.dataset.loaded) {
+      v.dataset.loaded = '1';
+      v.preload = 'auto';
+      v.addEventListener('canplay', function () { safePlay(v); }, { once: true });
+      v.load();
+    }
+    safePlay(v);
+  }
+
+  /* Poster image fallback if a video file is ever missing */
+  gridVideos.forEach(function (v) {
+    v.addEventListener('error', function (e) {
+      if ((e.target && e.target.tagName === 'SOURCE') || v.error) {
+        var img = document.createElement('img');
+        img.className = 'campaign-avatar-video';
+        img.src = v.getAttribute('poster');
+        var card = v.closest('.campaign-card');
+        img.alt = card ? ((card.querySelector('h3') || {}).textContent || 'Campaign preview') : 'Campaign preview';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        v.replaceWith(img);
+      }
+    }, true);
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) loadAndPlay(en.target);
+        else en.target.pause();
+      });
+    }, { rootMargin: '250px 0px', threshold: 0.15 });
+    gridVideos.forEach(function (v) { io.observe(v); });
+  } else {
+    gridVideos.forEach(loadAndPlay);
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      gridVideos.forEach(function (v) { v.pause(); });
+    } else {
+      gridVideos.forEach(function (v) {
+        var r = v.getBoundingClientRect();
+        if (r.bottom > -250 && r.top < window.innerHeight + 250) safePlay(v);
+      });
+    }
+  });
+})();
 </script>
 
 </body>

@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CREATEBYMOH — Cinematic Motion Design for Premium Perfume Brands</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preload" as="image" href="thumbs/parfum-gomme.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -601,7 +604,7 @@
     <!-- Campaign 1: Perfume Parfum Homme -->
     <div class="campaign-card" data-sample="parfum-gomme">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/parfum-gomme.jpg">
           <source src="videos/perfume/parfum-gomme.mp4" type="video/mp4">
         </video>
       </div>
@@ -614,7 +617,7 @@
     <!-- Campaign 2: Streetwear Shirt Swap -->
     <div class="campaign-card" data-sample="shirt-swap">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/streetwear-shirt-swap.jpg">
           <source src="videos/streetwear/shirt-swap.mp4" type="video/mp4">
         </video>
       </div>
@@ -627,7 +630,7 @@
     <!-- Campaign 3: Jewelry Gilded Chain -->
     <div class="campaign-card" data-sample="gilded-chain">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/jewelry-gilded-chain.jpg">
           <source src="videos/jewelry/gilded-chain.mp4" type="video/mp4">
         </video>
       </div>
@@ -640,7 +643,7 @@
     <!-- Campaign 4: Perfume Sparda Oud -->
     <div class="campaign-card" data-sample="sparda-amber">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/sparda-amber.jpg">
           <source src="videos/perfume/sparda-amber.mp4" type="video/mp4">
         </video>
       </div>
@@ -653,7 +656,7 @@
     <!-- Campaign 5: Streetwear Oversized Hoodie -->
     <div class="campaign-card" data-sample="hoodie-lookbook">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/streetwear-hoodie.jpg">
           <source src="videos/streetwear/hoodie-lookbook.mp4" type="video/mp4">
         </video>
       </div>
@@ -666,7 +669,7 @@
     <!-- Campaign 6: Jewelry Gold Ring -->
     <div class="campaign-card" data-sample="gold-ring">
       <div class="campaign-avatar-holder">
-        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="metadata">
+        <video class="campaign-avatar-video" autoplay muted loop playsinline preload="none" poster="thumbs/jewelry-gold-ring.jpg">
           <source src="videos/jewelry/gold-ring.mp4" type="video/mp4">
         </video>
       </div>
@@ -1077,6 +1080,82 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === ' ' && modal.classList.contains('active')) { e.preventDefault(); togglePlay(); }
   });
 });
+</script>
+
+
+<script>
+/* CREATEBYMOH — media speed & autoplay manager
+   Lazy-loads campaign videos only near the viewport, guarantees muted
+   autoplay across browsers, pauses offscreen/hidden videos to save data
+   and CPU, and swaps in the poster image if a video file is missing. */
+(function () {
+  var gridVideos = Array.prototype.slice.call(document.querySelectorAll('video.campaign-avatar-video'));
+  if (!gridVideos.length) return;
+
+  function prime(v) { v.muted = true; v.playsInline = true; v.setAttribute('muted', ''); }
+
+  function safePlay(v) {
+    prime(v);
+    var p = v.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(function () {
+        var resume = function () { safePlay(v); };
+        document.addEventListener('pointerdown', resume, { once: true });
+        document.addEventListener('touchstart', resume, { once: true, passive: true });
+        document.addEventListener('keydown', resume, { once: true });
+      });
+    }
+  }
+
+  function loadAndPlay(v) {
+    if (!v.dataset.loaded) {
+      v.dataset.loaded = '1';
+      v.preload = 'auto';
+      v.addEventListener('canplay', function () { safePlay(v); }, { once: true });
+      v.load();
+    }
+    safePlay(v);
+  }
+
+  /* Poster image fallback if a video file is ever missing */
+  gridVideos.forEach(function (v) {
+    v.addEventListener('error', function (e) {
+      if ((e.target && e.target.tagName === 'SOURCE') || v.error) {
+        var img = document.createElement('img');
+        img.className = 'campaign-avatar-video';
+        img.src = v.getAttribute('poster');
+        var card = v.closest('.campaign-card');
+        img.alt = card ? ((card.querySelector('h3') || {}).textContent || 'Campaign preview') : 'Campaign preview';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        v.replaceWith(img);
+      }
+    }, true);
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) loadAndPlay(en.target);
+        else en.target.pause();
+      });
+    }, { rootMargin: '250px 0px', threshold: 0.15 });
+    gridVideos.forEach(function (v) { io.observe(v); });
+  } else {
+    gridVideos.forEach(loadAndPlay);
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      gridVideos.forEach(function (v) { v.pause(); });
+    } else {
+      gridVideos.forEach(function (v) {
+        var r = v.getBoundingClientRect();
+        if (r.bottom > -250 && r.top < window.innerHeight + 250) safePlay(v);
+      });
+    }
+  });
+})();
 </script>
 
 </body>
